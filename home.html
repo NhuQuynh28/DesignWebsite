@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICA'S TACO - Nhà Hàng Mê-hi-cô</title>
+    
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+	<!-- Responsive CSS: Mobile styles for smaller screens -->
+    <link rel="stylesheet" href="home_mobile.css" media="screen and (max-width: 767px)">
+    <!-- Responsive CSS: Desktop styles for larger screens -->
+    <link rel="stylesheet" href="home_desktop.css" media="screen and (min-width: 768px)">
+    <!-- JavaScript file for interactive elements -->
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <!-- Header section containing navigation and logo -->
+    <header>
+        <!-- Logo container with restaurant name and tagline -->
+       <div class="logo-container">
+	  
+    <a href="home.html">
+        <img src="https://i.imgur.com/VjvAHJy.png" alt="TICA'S TACO Logo" class="logo">
+    
+	</a>
+ <a class="fredericka-font" href="home.html"  >TICA'S TACO</a>
+</div>
+        
+        <!-- Main navigation header -->
+        <div class="main-header">
+            <nav>
+                <!-- Main navigation menu -->
+<ul class="nav-menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="signIn.html">ĐẶT HÀNG</a></li>
+            <li><a href="cuoi_ki.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+<li><a href="home.html#sustainability" class="smooth-scroll">CAM KẾT BỀN VỮNG</a></li>
+<li><a href="home.html#testimonials" id="scrollToReviews">ĐÁNH GIÁ & PHẢN HỒI</a></li>
+        </ul>
+                <!-- Mobile menu hamburger button -->
+                <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section with image slider -->
+<section id="hero">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" style="background-image: url('https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/budget_beef_tacos_32412_16x9.jpg');"></div>
+                    <div class="slide" style="background-image: url('https://bepbbq.com/wp-content/uploads/2024/07/healthy-tacos-recipe.jpg');"></div>
+                    <div class="slide" style="background-image: url('https://www.unileverfoodsolutions.com.sg/dam/global-ufs/mcos/SEA/calcmenu/recipes/SG-recipes/red-meats-&-red-meat-dishes/%E9%A6%99%E8%BE%A3%E7%95%AA%E8%8C%84%E9%85%B1%E6%B1%81%E7%89%9B%E8%82%89%E7%8E%89%E7%B1%B3%E9%A5%BC/main-header.jpg');"></div>
+                    <div class="slide" style="background-image: url('https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg');"></div>
+                </div>
+                
+                <div class="slider-arrow prev-arrow">&#10094;</div>
+                <div class="slider-arrow next-arrow">&#10095;</div>
+                
+                <div class="slider-controls">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="cta-button">
+                        <a href="signIn.html">ĐẶT HÀNG NGAY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Featured dishes section -->
+<a href="menu.html">
+    <section id="featured-dishes" class="hidden">
+        <h2>MÓN ĂN PHẢI THỬ</h2>
+        <div class="dish-container">
+            <div class="dish-card hidden">
+                <div class="dish-image" id="dish1">
+                    <div class="dish-overlay">
+                        <h3 class="dish-title">Taco Bò</h3>
+                        <p class="dish-description">Taco bò truyền thống với sốt salsa tươi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image" id="dish2">
+                    <div class="dish-overlay">
+                        <h3 class="dish-title">Taco Cá</h3>
+                        <p class="dish-description">Taco cá với bơ và sốt chanh tươi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image" id="dish3">
+                    <div class="dish-overlay">
+                        <h3 class="dish-title">Taco Gà</h3>
+                        <p class="dish-description">Taco gà với sốt phô mai đặc biệt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>
+    </main>
+
+<section id="about-us" class="hidden">
+    <div class="about-container">
+        <div class="about-image hidden"></div>
+        <div class="about-content hidden">
+                <h2>VỀ CHÚNG TÔI</h2>
+                <h3>HÀNH TRÌNH KIẾN TẠO HƯƠNG VỊ ĐÍCH THỰC</h3>
+                <p>Chúng tôi tự hào mang đến những món ăn đậm chất truyền thống với hương vị nguyên bản, được chế biến từ những nguyên liệu tươi ngon, tuyển chọn kỹ lưỡng. Mỗi món ăn không chỉ là sự kết hợp hài hòa giữa hương vị và màu sắc mà còn chứa đựng tinh hoa của nền ẩm thực, mang đến cho thực khách những trải nghiệm đáng nhớ.</p>
+                <p>Với sứ mệnh lan tỏa đam mê ẩm thực, chúng tôi luôn đặt chất lượng và sự hài lòng của khách hàng lên hàng đầu. Từng công đoạn chế biến đều được thực hiện cẩn thận, từ việc chọn lựa nguyên liệu cho đến cách chế biến và bày trí, nhằm mang đến những bữa ăn tròn vị, an toàn và đầy cảm hứng.
+
+Chúng tôi tin rằng ẩm thực không chỉ đơn thuần là những món ăn, mà còn là câu chuyện về văn hóa, tình yêu và sự gắn kết. Chính vì thế, chúng tôi luôn không ngừng sáng tạo, đổi mới để mang đến những món ăn vừa giữ được giá trị truyền thống, vừa phù hợp với khẩu vị hiện đại, giúp thực khách tận hưởng trọn vẹn từng khoảnh khắc bên những người thân yêu.
+
+Hãy cùng chúng tôi khám phá hành trình ẩm thực đặc sắc, nơi mỗi món ăn là một câu chuyện, mỗi bữa ăn là một trải nghiệm đáng nhớ!</p>
+<br><br>               
+			   <div class="about-cta">
+                    <a href="cuoi_ki.html" class="btn-learn-more">KHÁM PHÁ NGAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- New Aside Sections -->
+   
+
+<aside id="sustainability">
+    <div class="sustainability-container">
+        <h2>Cam Kết Bền Vững</h2>
+        <div class="sustainability-content">
+            <div class="sustainability-icons">
+                <!-- Nguyên Liệu Hữu Cơ -->
+                <div class="icon-item">
+                    <img src="https://cdn.tgdd.vn/2020/08/CookProduct/58-1200x676-1.jpg" alt="Nguyên Liệu Hữu Cơ" class="icon-image">
+                    <span class="icon">🌱</span>
+                    <p>Nguyên Liệu Hữu Cơ</p>
+                </div>
+
+                <!-- Bao Bì Thân Thiện -->
+                <div class="icon-item">
+                    <img src="https://bizweb.dktcdn.net/100/091/995/files/bao-bi-giay-thuc-pham.jpg?v=1727057490573" alt="Bao Bì Thân Thiện" class="icon-image">
+                    <span class="icon">♻️</span>
+                    <p>Bao Bì Thân Thiện Môi Trường</p>
+                </div>
+
+                <!-- Hỗ Trợ Nông Dân -->
+                <div class="icon-item">
+                    <img src="https://btgtu.lamdong.dcs.vn/Portals/17/media/newsimage/n/o/n/nong-dan-cac-dia-phuong-thu-hoach-nong-san-ho-tro--01.png" alt="Hỗ Trợ Nông Dân" class="icon-image">
+                    <span class="icon">🚜</span>
+                    <p>Hỗ Trợ Nông Dân Địa Phương</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+
+
+<br><br>
+
+
+    <!-- Testimonials and history section -->
+    <section id="testimonials">
+            
+            <!-- Customer reviews header -->
+            <div class="testimonials-subheader">
+                <h3>Khách hàng nói gì?</h3>
+                <p>Ý kiến của bạn là động lực của chúng tôi?</p>
+            </div>
+            
+            <!-- Customer reviews container -->
+<div class="reviews-container" data-aos="fade-up" data-aos-duration="800">
+
+                <!-- Review card 1 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <p>Tica's Taco là nơi tuyệt vời để thưởng thức ẩm thực Mexico. Món ăn ngon, phục vụ nhanh chóng và không gian ấm cúng. Tôi sẽ quay lại nhiều lần!</p>
+                    </div>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <div class="reviewer-icon">
+                            <img src="https://img6.thuthuatphanmem.vn/uploads/2023/03/24/anh-nam-dep-nhat_100907631.jpg" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-name">@hoanganh</div>
+                    </div>
+                </div>
+                
+                <!-- Review card 2 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <p>Tôi đã đến Tica's Taco vào cuối tuần vừa rồi và thật sự ấn tượng! Món taco bò cay ở đây ngon tuyệt vời, thịt bò mềm và đậm đà, kết hợp với sốt cay đặc trưng tạo nên một hương vị khó quên. Không gian quán ấm cúng, nhân viên nhiệt tình và thân thiện. Tôi chắc chắn sẽ quay lại để thử thêm nhiều món khác trong thực đơn.</p>
+                    </div>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <div class="reviewer-icon">
+                            <img src="https://lh3.googleusercontent.com/Xdd3t3ZXrQaQBzWWHpibgCwX_xNS6VdMej-kI-YScyR0swmAGUvmFL4l5TSA3ggSH6aB-QpNdMlqhGFPdm7OiILIF_ZcwMt1A3_rdlvffC-70KKe0fv8qSc4YElCXak_eKlVgJCQUshOnWLmsQ" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-name">@MinhNguyen</div>
+                    </div>
+                </div>
+                
+                <!-- Review card 3 -->
+                <div class="review-card">
+                    <div class="review-content">
+                        <p> Tôi rất thích món taco tôm nướng ở đây. Hương vị đậm đà, tươi ngon. Nhân viên nhiệt tình và thân thiện. Chắc chắn sẽ giới thiệu cho bạn bè.</p>
+                    </div>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <div class="reviewer-icon">
+                            <img src="https://studiovietnam.com/wp-content/uploads/2021/07/chup-anh-chan-dung-troi-nang-6.jpg" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-name">@TranTinh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<br><br>
+
+
+    <!-- Contact section with map -->
+    <section id="contact-us">
+        <p>Gặp chúng tôi ở 144 Đường Xuân Thủy, Cầu Giấy, Thành phố Hà Nội</p>
+        <!-- Google Maps embed -->
+        <div class="map-container">
+            <iframe
+                width="100%"
+                height="400"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.896127666702!2d105.78234169999999!3d21.036841799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab32d9e24987%3A0x5034a450222e8309!2zxJDhuqFpIEjhu41jIFF14buRYyBHaWEgSMOgIE7hu5lp!5e0!3m2!1sen!2s!4v1742487107207!5m2!1sen!2s">
+            </iframe>
+        </div>
+    </section>
+	
+	<br><br>
+
+    <!-- Footer section -->
+<footer id="footer">
+        <!-- Footer logo -->
+        <div class="footer-logo">
+            <h2>TICA'S TACO</h2>
+            <p>NHÀ HÀNG MÊ-HI-CÔ</p>
+        </div>
+        
+        <!-- Footer information sections -->
+        <div class="footer-info">
+            <!-- Opening hours information -->
+            <div class="hours">
+                <h3>GIỜ MỞ CỬA</h3>
+                <p>Thứ 2 - Thứ 6: 11 a.m - 10 p.m</p>
+                <p>Thứ 7 - Chủ nhật: 10 a.m - 11 p.m</p>
+            </div>
+            
+            <!-- Location information -->
+            <div class="location">
+                <h3>ĐỊA ĐIỂM</h3>
+                <p>144 Xuân Thủy</p>
+                <p>Hà Nội, Hà Nội</p>
+            </div>
+            
+            <!-- Contact information -->
+            <div class="contact">
+                <h3>LIÊN HỆ</h3>
+                <p>ticastaco@gmail.com</p>
+                <p>098 101 0101</p>
+            </div>
+            
+            <!-- Social media links -->
+            <div class="social">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+<div class="social-icons">
+    <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon" id="facebook-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png'); background-size: cover;"></a>
+    <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon" id="instagram-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'); background-size: cover;"></a>
+   </div>
+            </div>
+        </div>
+    </footer>
+	
+<script src="https://www.drv.tw/inc/wd.js?s=truongthienan-web-development-lab3-pro-html"></script></body>
+</html>
