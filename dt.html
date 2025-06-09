@@ -1,0 +1,160 @@
+
+	<!DOCTYPE html>
+	<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Đặt Hàng - TICA'S TACO</title>
+		<link rel="stylesheet" href="home_mobile.css" media="screen and (max-width: 767px)">
+        <link rel="stylesheet" href="home_desktop.css" media="screen and (min-width: 768px)">
+		<link rel="stylesheet" href="dt_mobile.css" media="screen and (max-width: 767px)">
+        <link rel="stylesheet" href="dt_desktop.css" media="screen and (min-width: 768px)">
+		
+		<script src="home.js" defer></script>
+		<script src="dt.js" defer></script>
+	</head>
+	<body>
+		<header>
+			 <!-- Logo container with restaurant name and tagline -->
+    <div class="logo-container">
+        <a href="home.html">
+            <img src="https://i.imgur.com/VjvAHJy.png" alt="TICA'S TACO Logo" class="logo">
+        </a>
+        <a class="fredericka-font" href="home.html">TICA'S TACO</a>
+    </div>
+    
+    <!-- Main navigation header -->
+    <div class="main-header">
+        <nav>
+            <!-- Main navigation menu -->
+<ul class="nav-menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="signIn.html">ĐẶT HÀNG</a></li>
+            <li><a href="cuoi_ki.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+<li><a href="home.html?scroll=sustainability">CAM KẾT BỀN VỮNG</a></li>
+<li><a href="home.html?scroll=testimonials">ĐÁNH GIÁ & PHẢN HỒI</a></li>
+        </ul>
+            <!-- Mobile menu hamburger button -->
+            <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+		</header>
+		
+		<main>
+			<div class="order-container">
+				<div class="order-column order-left" id="cart">
+					<h2>Giỏ hàng của bạn</h2>
+					<ul id="cart-items"></ul>
+				</div>
+				<div class="order-column order-middle">
+					<div>
+						<h3>Gia vị lựa chọn</h3>
+						<label><input type="checkbox" name="spice" value="tương cà"> Tương cà</label>
+						<label><input type="checkbox" name="spice" value="tương ớt"> Tương ớt</label>
+						<label><input type="checkbox" name="spice" value="dầu ớt"> Dầu ớt</label>
+						<label><input type="checkbox" name="spice" value="mật ong"> Mật ong</label>
+					</div>
+					<div>
+						<h3>Đồ dùng đi kèm</h3>
+						<label><input type="checkbox" name="extra" value="dụng cụ ăn uống"> Dụng cụ ăn uống</label>
+						<label><input type="checkbox" name="extra" value="giấy bạc hâm"> Giấy bạc hâm</label>
+						<label><input type="checkbox" name="extra" value="hướng dẫn hâm nóng"> Hướng dẫn hâm nóng</label>
+					</div>
+					<div>
+						<h3>Ghi chú</h3>
+						<textarea placeholder="Nhập ghi chú của bạn..."></textarea>
+						<p class="note">Nếu bạn cần loại bỏ các thành phần dị ứng, hãy cho chúng tôi biết.</p>
+					</div>
+				</div>
+				<div class="order-column order-right">
+					<h2>Thông tin đơn hàng</h2>
+					<ul id="order-summary"></ul>
+					<p>Tổng tiền: <span id="total-price">0</span> VNĐ</p>
+					<a href="#" class="checkout-btn" id="open-payment-popup">Thanh toán</a>
+				</div>
+			</div>
+			
+		</main>
+		<!-- Popup thanh toán -->
+<div id="payment-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Chọn phương thức thanh toán</h2>
+        <div class="payment-methods">
+            <div class="payment-option" id="zalo-pay">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.B2eN46zF0bixOiFzRfFMOQHaHa&pid=Api&P=0&h=220" alt="Zalo Pay">
+                
+            </div>
+            <div class="payment-option" id="paypal">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.08pbRxr6BpSE6zsBpVVN_wHaFj&pid=Api&P=0&h=220" alt="PayPal">
+           
+            </div>
+        </div>
+
+        <!-- QR Code cho Zalo Pay -->
+        <div id="zalo-qr" class="payment-details">
+            <h3>Quét mã QR để thanh toán</h3>
+            <img src="https://img.upanh.tv/2023/10/26/imagef598b57d1eadb142.png" alt="QR Code Zalo Pay">
+        </div>
+
+       <!-- Form nhập thẻ PayPal -->
+<div id="paypal-form" class="payment-details">
+    <h3>Nhập thông tin thẻ</h3>
+    <input type="text" placeholder="Tên chủ thẻ">
+    <input type="text" id="card-number" placeholder="Số thẻ" >
+    <span id="card-warning" style="color: red; font-size: 14px;"></span>
+    <input type="text" placeholder="MM/YY">
+    <input type="text" placeholder="CVV">
+    <button class="pay-btn">Thanh toán với PayPal</button>
+</div>
+
+    </div>
+</div>
+
+		<footer>
+			 <!-- Footer logo -->
+			<div class="footer-logo">
+				<h2>TICA'S TACO</h2>
+				<p>NHÀ HÀNG MÊ-HI-CÔ</p>
+			</div>
+			
+			<!-- Footer information sections -->
+			<div class="footer-info">
+				<!-- Opening hours information -->
+				<div class="hours">
+					<h3>GIỜ MỞ CỬA</h3>
+					<p>Thứ 2 - Thứ 6: 11 a.m - 10 p.m</p>
+					<p>Thứ 7 - Chủ nhật: 10 a.m - 11 p.m</p>
+				</div>
+				<!-- Location information -->
+				<div class="location">
+					<h3>ĐỊA ĐIỂM</h3>
+					<p>144 Xuân Thủy</p>
+					<p>Hà Nội, Hà Nội</p>
+				</div>
+				
+				<!-- Contact information -->
+				<div class="contact">
+					<h3>LIÊN HỆ</h3>
+					<p>ticastaco@gmail.com</p>
+					<p>098 101 0101</p>
+				</div>
+				
+				<!-- Social media links -->
+				<div class="social">
+					<h3>THEO DÕI CHÚNG TÔI</h3>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon" id="facebook-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png'); background-size: cover;"></a>
+		<a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon" id="instagram-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'); background-size: cover;"></a>
+	   </div>
+				</div>
+			</div>
+		</footer>
+	<script src="https://www.drv.tw/inc/wd.js?s=truongthienan-web-development-lab3-pro-html"></script></body>
+	</html>

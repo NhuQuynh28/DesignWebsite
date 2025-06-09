@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Tica's Tacos</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+<script src="home.js" defer></script>
+    <link rel="stylesheet" href="signin_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="signin_mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header>
+        <!-- Logo container with restaurant name and tagline -->
+        <div class="logo-container">
+
+            <a href="home.html">
+                <img src="https://i.imgur.com/VjvAHJy.png" alt="TICA'S TACO Logo" class="logo">
+            </a>
+            <p class="fredericka-font">TICA'S TACO</p>
+        </div>
+
+<!-- Main navigation header -->
+        <div class="main-header">
+            <nav>
+                <!-- Main navigation menu -->
+            <ul class="nav-menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="signIn.html">ĐẶT HÀNG</a></li>
+            <li><a href="cuoi_ki.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+            <li><a href="home.html?scroll=sustainability">CAM KẾT BỀN VỮNG</a></li>
+<li><a href="home.html?scroll=testimonials">ĐÁNH GIÁ & PHẢN HỒI</a></li>
+        </ul>
+                <!-- Mobile menu hamburger button -->
+                <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h1 class="page-title">Sign In to Tica's Tacos</h1>
+
+        <div class="signin-container">
+            <!-- Blocked by DriveToWeb --><WITHHELD-form id="signin-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <!-- Blocked by DriveToWeb --><WITHHELD-input type="email" id="email" name="email" required>
+                    <p class="error-message" id="email-error">Please enter a valid email address</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <!-- Blocked by DriveToWeb --><WITHHELD-input type="password" id="password" name="password" required>
+                    <p class="error-message" id="password-error">Password must be at least 6 characters</p>
+                </div>
+
+                <div class="remember-me">
+                    <!-- Blocked by DriveToWeb --><WITHHELD-input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <a href="shoppingcart1.html">
+                    <!-- Blocked by DriveToWeb --><WITHHELD-button type="submit" class="signin-button">Sign In</button>
+                </a>
+            </form>
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+
+            <div class="social-signin">
+                <p>Or sign in with</p>
+                <div>
+                    <span>
+                        <!-- Blocked by DriveToWeb --><WITHHELD-button class="social-button">Google</button>
+                    </span>
+                    <span>
+                        <!-- Blocked by DriveToWeb --><WITHHELD-button class="social-button">Facebook</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+<br><br>
+    <!-- Footer section -->
+    <footer id="footer">
+        <!-- Footer logo -->
+        <div class="footer-logo">
+            <h2>TICA'S TACO</h2>
+            <p>NHÀ HÀNG MÊ-HI-CÔ</p>
+        </div>
+
+        <!-- Footer information sections -->
+        <div class="footer-info">
+            <!-- Opening hours information -->
+            <div class="hours">
+                <h3>GIỜ MỞ CỬA</h3>
+                <p>Thứ 2 - Thứ 6: 11 a.m - 10 p.m</p>
+                <p>Thứ 7 - Chủ nhật: 10 a.m - 11 p.m</p>
+            </div>
+
+            <!-- Location information -->
+            <div class="location">
+                <h3>ĐỊA ĐIỂM</h3>
+                <p>144 Xuân Thủy</p>
+                <p>Hà Nội, Hà Nội</p>
+            </div>
+
+            <!-- Contact information -->
+            <div class="contact">
+                <h3>LIÊN HỆ</h3>
+                <p>ticastaco@gmail.com</p>
+                <p>098 101 0101</p>
+            </div>
+
+            <!-- Social media links -->
+            <div class="social">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon" id="facebook-icon"
+                        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png'); background-size: cover;"></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon" id="instagram-icon"
+                        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'); background-size: cover;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup elements -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3 class="popup-title">Welcome Back!</h3>
+        <p class="popup-message">You have successfully signed in to your Tica's Tacos account.</p>
+        <!-- Blocked by DriveToWeb --><WITHHELD-button class="popup-close" id="close-popup">Continue</button>
+    </div>
+
+    <script src="signin.js"></script>
+<script src="https://www.drv.tw/inc/wd.js?s=truongthienan-web-development-lab3-pro-html"></script></body>
+</html>

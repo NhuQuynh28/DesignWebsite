@@ -1,0 +1,478 @@
+body {
+    font-family: 'EB Garamond', serif; /* S廙� d廙叩g font ch廙� EB Garamond cho to�慙 b廙� trang */
+    margin: 0;                        /* Lo廕【 b廙� margin m廕搾 �𤒹�𡃉h */
+    padding: 0;                       /* Lo廕【 b廙� padding m廕搾 �𤒹�𡃉h */
+	background-image: url(https://torkifood.vn/wp-content/uploads/2023/11/banh-taco-mexico-va-nhung-phien-ban-cop-mac-viet-nam.jpg); /* �靟熒t h穫nh n廙�n t廙� URL */
+    background-size: cover;           /* H穫nh n廙�n ph廙� to�慙 b廙� m�慙 h穫nh */
+    background-position: center;      /* Canh gi廙畝 h穫nh n廙�n */
+    background-repeat: no-repeat;     /* Kh繫ng l廕搆 l廕【 h穫nh n廙�n */
+	height: 100%;                     /* Chi廙�u cao 100% (�齅惺 khi d羅ng 100vh �𤒹� �𤒹漆m b廕υ) */
+    margin: 0;                        /* L廕搆 l廕【 margin �𤒹� ch廕畚 ch廕疸 kh繫ng c籀 kho廕τg tr廕疸g */
+    padding: 0;                       /* L廕搆 l廕【 padding cho nh廕另 qu獺n */
+    background-color: #FFFFFF;        /* M�抦 n廙�n tr廕疸g, d廙� ph簷ng n廕簑 h穫nh n廙�n kh繫ng t廕ξ */
+    color: #00DD00;                   /* M�抦 ch廙� xanh l獺 */
+    line-height: 1.6re;               /* Kho廕τg c獺ch d簷ng (c籀 th廙� l�� l廙𡟙: n礙n d羅ng 1.6rem) */
+	height: 100vh;                    /* Chi廙�u cao b廕彫g chi廙�u cao c廙吧 viewport */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header v�� Navigation */
+header {
+    background-color: #fff4de;        /* M�抦 n廙�n v�慙g nh廕﹀ cho header */
+    position: sticky;                 /* Gi廙� header lu繫n c廙� �𤒹�𡃉h 廙� �𤒹漣u trang khi cu廙㷌 */
+    top: 0;                           /* C�n ch廙纤h header 廙� �𤒹漣u trang */
+    width: 100%;                      /* Header chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+    z-index: 1000;                    /* �靟漆m b廕υ header lu繫n n廕彩 tr礙n c獺c ph廕吵 t廙� kh獺c */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* T廕︽ b籀ng nh廕� cho header */
+    margin: 0;                        /* Lo廕【 b廙� margin d⑹ th廙冠 */
+    padding: 0;                       /* Lo廕【 b廙� padding d⑹ th廙冠 */
+	 line-height: 1;                  /* �靟熒t kho廕τg c獺ch d簷ng b廕彫g 1 �𤒹� gi廕σ kho廕τg tr廙𤉋g */
+}
+
+/* Logo v�� �𤒹�𡃉h d廕》g ch廙� */
+.logo-container {
+    display: flex;                    /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 c獺c ph廕吵 t廙� */
+    align-items: center;              /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    justify-content: center;          /* Canh gi廙畝 theo chi廙�u ngang */
+    gap: 10px;                        /* Kho廕τg c獺ch gi廙畝 c獺c ph廕吵 t廙� */
+    padding: 1px;                     /* Padding nh廙� quanh container */
+	margin-bottom: -25px;             /* �𨜓廙�u ch廙纤h v廙� tr穩 xu廙𤉋g tr礙n (璽m �𤒹� k矇o l礙n) */
+	margin-top: 0;                    /* �靟熒t margin-top b廕彫g 0 */
+    padding-top: 0;                   /* �靟熒t padding-top b廕彫g 0 */
+}
+.fredericka-font {
+    font-size: 40px;                  /* K穩ch th⑹廙𢲷 ch廙� l廙𣌟 cho t礙n th⑹①ng hi廙杮 */
+    font-weight: bold;                /* Ch廙� in �𤒹滬m */
+    color: #553d07;                   /* M�抦 ch廙� xanh r礙u */
+    margin-bottom: 6px;               /* Kho廕τg c獺ch b礙n d⑹廙𢹂 */
+	font-family: 'EB Garamond', serif; /* D羅ng font EB Garamond */
+	 text-decoration: none;           /* Lo廕【 b廙� g廕︷h ch璽n */
+}
+.logo {
+    width: 100px;                     /* Chi廙�u r廙㷌g logo */
+    height: auto;                     /* Chi廙�u cao t廙� �𤒹�㷌g �𤒹� gi廙� t廙� l廙� */
+}
+
+.text-container {
+    text-align: left;                 /* Canh l廙� tr獺i cho n廙耥 dung */
+}
+
+h1 {
+    font-size: 24px;                  /* K穩ch th⑹廙𢲷 ti礙u �𤒹� */
+    margin: 0;                        /* Lo廕【 b廙� margin m廕搾 �𤒹�𡃉h */
+    color: #e63946;                   /* M�抦 ti礙u �𤒹� (�𤒹��) */
+}
+
+p {
+    font-size: 14px;                  /* K穩ch th⑹廙𢲷 ch廙� c廙吧 �鰂廕》 v�n */
+    margin: 0;                        /* Lo廕【 b廙� margin m廕搾 �𤒹�𡃉h */
+    color: #264653;                   /* M�抦 ch廙� (xanh �𤒹滬m) */
+}
+
+/* Header ch穩nh */
+.main-header {
+    background-color: #fff4de;        /* M�抦 n廙�n v�慙g nh廕﹀ cho header ch穩nh */
+}
+
+/* Thanh �魀廙�u h⑹廙𣌟g (Navigation) */
+nav ul {
+    display: flex;                    /* Hi廙�n th廙� c獺c m廙卉 menu theo h�慙g ngang */
+    justify-content: center;          /* Canh gi廙畝 danh s獺ch menu */
+    list-style: none;                 /* Lo廕【 b廙� d廕只 ch廕叮 c廙吧 danh s獺ch */
+    padding: 0.9rem 0;                /* Padding tr礙n d⑹廙𢹂 cho menu */
+	   margin: 0;                  /* Lo廕【 b廙� margin �𤒹� kh繫ng t廕︽ kho廕τg tr廙𤉋g */
+}
+
+nav ul li {
+    margin: 0 1.0rem;                 /* Kho廕τg c獺ch gi廙畝 c獺c m廙卉 menu */
+    position: relative;               /* Cho ph矇p �𤒹�𡃉h v廙� ph廕吵 t廙� con n廕簑 c廕吵 */
+}
+
+nav ul li a {
+    font-size: 0.9rem;                /* K穩ch th⑹廙𢲷 ch廙� c廙吧 li礙n k廕篙 menu */
+    font-weight: 600;                 /* In �𤒹滬m ch廙� */
+    color: #14213D;                  /* M�抦 ch廙� xanh �𤒹滬m */
+    transition: color 0.3s ease;      /* Hi廙杮 廙姊g chuy廙�n m�抦 khi hover */
+    padding: 0.2rem 0;                /* Padding nh廙� cho li礙n k廕篙 */
+    display: block;                  /* �靟漆m b廕υ li礙n k廕篙 chi廕禦 to�慙 b廙� kh繫ng gian */
+	letter-spacing: 2px;             /* Kho廕τg c獺ch gi廙畝 c獺c k羸 t廙� */
+	text-decoration: none;           /* Lo廕【 b廙� g廕︷h ch璽n */
+}
+
+nav ul li a:hover {
+    color: #e63946;                  /* M�抦 ch廙� chuy廙�n sang �𤒹�� khi hover */
+}
+
+.has-dropdown {
+    position: relative;              /* D�慙h cho m廙卉 c籀 dropdown (n廕簑 s廙� d廙叩g) */
+}
+
+.mobile-menu-btn {
+    display: none;                   /* 廕盯 n繳t menu tr礙n mobile (desktop hi廙𡵞) */
+}
+
+/* Hero Section v�� Slider */
+#hero {
+    height: 70vh;                    /* Chi廙�u cao c廙吧 hero b廕彫g 70% chi廙�u cao viewport */
+    position: relative;
+    overflow: hidden;                /* 廕盯 ph廕吵 n廙耥 dung v⑹廙ㄅ ra ngo�犲 */
+}
+
+/* Slider container */
+.slider-container {
+    width: 100%;                     /* Chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+    position: relative;
+    overflow: hidden;                /* 廕盯 ph廕吵 tr�慙 c廙吧 slider */
+}
+
+/* Slider ch穩nh */
+.slider {
+    display: flex;                   /* S廕皰 x廕穆 c獺c slide theo h�慙g ngang */
+    transition: transform 0.5s ease-in-out; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g khi thay �𤒹�飃 slide */
+}
+
+/* M廙𡟙 slide */
+.slide {
+    min-width: 100%;                 /* M廙𡟙 slide chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+    height: 600px;                   /* Chi廙�u cao c廙� �𤒹�𡃉h cho slide */
+    background-size: cover;          /* H穫nh 廕τh slide ph廙� �𤒹漣y khung */
+    background-position: center;     /* Canh gi廙畝 h穫nh 廕τh trong slide */
+}
+
+/* �𨜓廙�u khi廙�n slider: dots v�� m觼i t礙n */
+.slider-controls {
+    position: absolute;
+    bottom: 20px;                    /* �靟熒t 廙� d⑹廙𢹂 c羅ng c廙吧 slider */
+    left: 50%;                       /* Canh gi廙畝 theo chi廙�u ngang */
+    transform: translateX(-50%);     /* �𨜓廙�u ch廙纤h canh gi廙畝 */
+    display: flex;
+    gap: 10px;                       /* Kho廕τg c獺ch gi廙畝 c獺c dot */
+    z-index: 5;
+}
+
+.slider-dot {
+    width: 12px;                     /* K穩ch th⑹廙𢲷 dot */
+    height: 12px;
+    border-radius: 50%;              /* Dot tr簷n */
+    background-color: rgba(255, 255, 255, 0.5); /* M�抦 tr廕疸g b獺n trong su廙𩾷 */
+    cursor: pointer;                 /* Con tr廙� thay �𤒹�飃 khi hover */
+    transition: background-color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 */
+}
+
+.slider-dot.active {
+    background-color: #fca311;       /* Dot �鬭ng active hi廙�n th廙� m�抦 v�慙g */
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;                        /* �靟熒t gi廙畝 theo chi廙�u d廙㷼 */
+    transform: translateY(-80px);    /* �𨜓廙�u ch廙纤h v廙� tr穩 m觼i t礙n */
+    background: rgba(0, 0, 0, 0.3);    /* N廙�n b獺n trong su廙𩾷 cho m觼i t礙n */
+    color: white;                    /* M�抦 ch廙� tr廕疸g tr礙n m觼i t礙n */
+    width: 50px;                     /* K穩ch th⑹廙𢲷 m觼i t礙n */
+    height: 50px;
+    display: flex;
+    align-items: center;             /* C�n gi廙畝 n廙耥 dung theo chi廙�u d廙㷼 */
+    justify-content: center;         /* C�n gi廙畝 n廙耥 dung theo chi廙�u ngang */
+    border-radius: 50%;              /* Bo tr簷n m觼i t礙n */
+    cursor: pointer;                 /* Con tr廙� khi hover */
+    font-size: 20px;                 /* K穩ch th⑹廙𢲷 icon m觼i t礙n */
+    z-index: 10;
+    transition: background 0.3s ease;/* Hi廙杮 廙姊g chuy廙�n n廙�n khi hover */
+}
+
+.slider-arrow:hover {
+    background: rgba(230, 57, 70, 0.8); /* M�抦 n廙�n �𤒹�� khi hover tr礙n m觼i t礙n */
+}
+
+.prev-arrow {
+    left: 20px;                      /* �靟熒t m觼i t礙n tr獺i c獺ch m矇p tr獺i 20px */
+}
+
+.next-arrow {
+    right: 20px;                     /* �靟熒t m觼i t礙n ph廕ξ c獺ch m矇p ph廕ξ 20px */
+}
+
+/* Responsive cho Slider */
+@media screen and (max-width: 767px) {
+    .slide {
+        height: 300px;              /* Gi廕σ chi廙�u cao slide tr礙n thi廕篙 b廙� di �𤒹�㷌g */
+    }
+    
+    .slider-arrow {
+        width: 40px;                /* �𨜓廙�u ch廙纤h k穩ch th⑹廙𢲷 m觼i t礙n tr礙n mobile */
+        height: 30px;
+        font-size: 16px;            /* Gi廕σ k穩ch th⑹廙𢲷 icon */
+    }
+    
+    .slider-dot {
+        width: 10px;                /* �𨜓廙�u ch廙纤h k穩ch th⑹廙𢲷 dot tr礙n mobile */
+        height: 10px;
+    }
+}
+
+main {
+    padding-top: 80px;               /* Th礙m kho廕τg c獺ch tr礙n �𤒹� kh繫ng b廙� header c廙� �𤒹�𡃉h che */
+    background-color: rgba(255, 255, 255, 0.6); /* N廙�n tr廕疸g v廙𢹂 �𤒹�� trong su廙𩾷 60% */
+    padding-bottom: 40px;            /* Kho廕τg c獺ch d⑹廙𢹂 cho main */
+}
+
+section {
+    padding: 60px 20px;              /* Padding cho t廙南g section */
+    max-width: 1200px;               /* Chi廙�u r廙㷌g t廙魀 �鬭 cho section */
+    margin: 0 auto;                  /* Canh gi廙畝 section */
+    text-align: center;              /* Canh gi廙畝 n廙耥 dung v�n b廕τ */
+}
+
+h2 {
+    font-size: 2.5rem;               /* K穩ch th⑹廙𢲷 ti礙u �𤒹� section */
+    color: #e44d26;                 /* M�抦 ti礙u �𤒹� (�𤒹�� cam) */
+    margin-bottom: 30px;             /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+	font-family: 'EB Garamond', serif; /* S廙� d廙叩g font ch廙� EB Garamond cho ti礙u �𤒹� */
+}
+
+.button {
+    display: inline-block;           /* Cho ph矇p hi廙�n th廙� theo d簷ng */
+    background-color: #CC6600;        /* M�抦 n廙�n cam cho n繳t */
+    color: white;                    /* M�抦 ch廙� tr廕疸g cho n繳t */
+    padding: 12px 30px;              /* Padding cho n繳t */
+    border-radius: 8px;              /* Bo tr簷n c獺c g籀c c廙吧 n繳t */
+    text-decoration: none;           /* Lo廕【 b廙� g廕︷h ch璽n */
+    transition: background-color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 n廙�n khi hover */
+    font-weight: bold;               /* Ch廙� in �𤒹滬m */
+}
+
+.button:hover {
+    background-color:#CC6600;        /* M�抦 n廙�n khi hover (gi廙� nguy礙n m�抦 cam) */
+    transform: scale(1.04);          /* Hi廙杮 廙姊g ph籀ng to nh廕� khi hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g m⑹廙ㄅ */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;                   /* S廙� d廙叩g flexbox �𤒹� c�n ch廙纤h n廙耥 dung */
+    justify-content: space-between;  /* C�n c獺ch �𤒹�u gi廙畝 c獺c ph廕吵 trong hero */
+    align-items: center;             /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    padding: 60px 0px;               /* Padding d廙㷼 cho hero */
+    background-color: transparent;   /* N廙�n trong su廙𩾷 cho hero */
+    color: #333;                     /* M�抦 ch廙� m廕搾 �𤒹�𡃉h cho hero */
+    text-align: left;                /* Canh tr獺i cho v�n b廕τ */
+    width: 100%;                     /* Chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+}
+
+.hero-content {
+    flex: 1;                         /* Chi廕禦 50% chi廙�u r廙㷌g n廕簑 c籀 hero-image b礙n c廕》h */
+    padding-right: 40px;             /* Kho廕τg c獺ch b礙n ph廕ξ cho n廙耥 dung hero */
+}
+
+.hero-content h1 {
+	color: #e44d26;                /* M�抦 ti礙u �𤒹� hero (�𤒹�� cam) */
+    font-size: 3.5rem;               /* K穩ch th⑹廙𢲷 l廙𣌟 cho ti礙u �𤒹� hero */
+    margin-bottom: 20px;             /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+    line-height: 1.2;                /* Kho廕τg c獺ch d簷ng nh廙� cho ti礙u �𤒹� */
+	font-family: 'EB Garamond ', serif; /* S廙� d廙叩g font EB Garamond cho ti礙u �𤒹� */
+}
+
+.hero-content p {
+    font-size: 1.2rem;              /* K穩ch th⑹廙𢲷 ch廙� cho �鰂廕》 v�n hero */
+    margin-bottom: 40px;             /* Kho廕τg c獺ch b礙n d⑹廙𢹂 �鰂廕》 v�n */
+}
+
+.hero-image {
+    flex: 1;                         /* Chi廕禦 50% chi廙�u r廙㷌g c廙吧 hero */
+    max-width: 50%;                  /* Gi廙𢹂 h廕》 chi廙�u r廙㷌g t廙魀 �鬭 c廙吧 h穫nh 廕τh */
+}
+
+.hero-image img {
+    width: 100%;                    /* H穫nh 廕τh �𤒹漣y �𤒹誧 chi廙�u r廙㷌g c廙吧 container */
+    border-radius: 10px;            /* Bo tr簷n c獺c g籀c c廙吧 h穫nh 廕τh */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Hi廙杮 廙姊g b籀ng �𤒹�� cho h穫nh 廕τh */
+}
+
+/* Menu Section */
+.menu {
+    background-color: #fff;         /* N廙�n tr廕疸g cho ph廕吵 th廙帷 �韲》 */
+}
+
+.menu-categories {
+    display: flex;                  /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 danh m廙卉 */
+    justify-content: center;        /* Canh gi廙畝 danh m廙卉 */
+    margin-bottom: 40px;            /* Kho廕τg c獺ch d⑹廙𢹂 danh m廙卉 */
+}
+
+.category-button {
+    background-color: transparent;  /* N廙�n trong su廙𩾷 cho n繳t danh m廙卉 */
+    border: 2px solid #e67e22;       /* Vi廙�n m�抦 cam cho n繳t */
+    color: #e67e22;                 /* M�抦 ch廙� cam */
+    padding: 10px 20px;             /* Padding cho n繳t */
+    border-radius: 8px;             /* Bo tr簷n c獺c g籀c */
+    margin: 0 10px;                /* Kho廕τg c獺ch gi廙畝 c獺c n繳t */
+    cursor: pointer;                /* Hi廙�n th廙� con tr廙� khi hover */
+    font-size: 1rem;                /* K穩ch th⑹廙𢲷 ch廙� c廙吧 n繳t */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 khi hover */
+}
+
+.category-button.active, .category-button:hover {
+    background-color: #e67e22;      /* N廙�n m�抦 cam khi n繳t �韲唸誨c active ho廕搾 hover */
+    color: white;                  /* Ch廙� chuy廙�n sang m�抦 tr廕疸g */
+}
+
+.menu-items-grid {
+    display: grid;                 /* S廙� d廙叩g CSS Grid �𤒹� s廕皰 x廕穆 m籀n �n */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* T廕︽ l⑹廙𢹂 linh ho廕﹀ */
+    gap: 30px;                     /* Kho廕τg c獺ch gi廙畝 c獺c m籀n �n */
+    margin-top: 30px;              /* Kho廕τg c獺ch tr礙n l⑹廙𢹂 m籀n �n */
+}
+
+.menu-item {
+    background-color: #FAEBD7;      /* N廙�n m�抦 kem cho kh廙魀 m籀n �n */
+    border-radius: 10px;            /* Bo tr簷n c獺c g籀c */
+    overflow: hidden;               /* 廕盯 ph廕吵 n廙耥 dung tr�慙 ra ngo�犲 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* T廕︽ hi廙杮 廙姊g b籀ng �𤒹�� */
+    text-align: left;               /* Canh l廙� tr獺i cho n廙耥 dung m籀n �n */
+    padding: 20px;                  /* Padding cho kh廙魀 m籀n �n */
+    display: flex;                  /* S廙� d廙叩g flexbox trong kh廙魀 m籀n �n */
+    flex-direction: column;         /* S廕皰 x廕穆 c獺c ph廕吵 t廙� theo c廙脌 */
+    transition: transform 0.2s ease-in-out; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g khi hover */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);   /* N璽ng kh廙魀 m籀n �n l礙n khi hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* T�ng b籀ng �𤒹�� khi hover */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g m⑹廙ㄅ */
+}
+
+.menu-item img {
+    width: 100%;                   /* H穫nh 廕τh chi廕禦 to�慙 b廙� chi廙�u r廙㷌g c廙吧 kh廙魀 m籀n �n */
+    height: 200px;                 /* Chi廙�u cao c廙� �𤒹�𡃉h cho h穫nh 廕τh */
+    object-fit: cover;             /* C廕眩 h穫nh 廕τh sao cho v廙冠 khung m�� v廕南 gi廙� t廙� l廙� */
+    border-radius: 8px;            /* Bo tr簷n c獺c g籀c c廙吧 h穫nh 廕τh */
+    margin-bottom: 15px;           /* Kho廕τg c獺ch b礙n d⑹廙𢹂 h穫nh 廕τh */
+}
+
+.menu-item h3 {
+    margin-top: 0;                 /* Lo廕【 b廙� margin tr礙n cho ti礙u �𤒹� m籀n �n */
+    color: #003366;                /* M�抦 ti礙u �𤒹� m籀n �n (xanh �𤒹滬m) */
+    margin-bottom: 5px;            /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+}
+
+.menu-item .description {
+    color: #777;                  /* M�抦 ch廙� m繫 t廕� m籀n �n (x獺m) */
+    font-size: 0.9rem;             /* K穩ch th⑹廙𢲷 ch廙� m繫 t廕� */
+    margin-bottom: 10px;           /* Kho廕τg c獺ch b礙n d⑹廙𢹂 m繫 t廕� */
+}
+
+.menu-item .price {
+    color: #000000;              /* M�抦 ch廙� cho gi獺 m籀n �n (�𦦨n) */
+    font-weight: bold;            /* In �𤒹滬m gi獺 */
+    font-size: 1.1rem;            /* K穩ch th⑹廙𢲷 ch廙� cho gi獺 */
+    margin-bottom: 15px;          /* Kho廕τg c獺ch b礙n d⑹廙𢹂 gi獺 */
+}
+
+.menu-item .add-to-cart {
+    background-color: #CC0000;    /* N廙�n �𤒹�� cho n繳t th礙m v�䰄 gi廙� h�慙g */
+    color: white;                /* M�抦 ch廙� tr廕疸g cho n繳t */
+    border: none;                /* Lo廕【 b廙� �韲唸�𩵚g vi廙�n */
+    padding: 10px 20px;          /* Padding cho n繳t */
+    border-radius: 8px;          /* Bo tr簷n c獺c g籀c c廙吧 n繳t */
+    cursor: pointer;             /* Hi廙�n th廙� con tr廙� khi hover */
+    font-size: 1rem;             /* K穩ch th⑹廙𢲷 ch廙� n繳t */
+    transition: background-color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 khi hover */
+    align-self: flex-start;      /* C�n n繳t v廙� b礙n tr獺i trong kh廙魀 m籀n �n */
+}
+
+.menu-item .add-to-cart:hover {
+    background-color: #880000;    /* Thay �𤒹�飃 m�抦 n廙�n n繳t khi hover */
+}
+
+/* Footer */
+footer {
+    background-color: #14213D;     /* N廙�n xanh �𤒹滬m cho footer */
+    color: #fff;                  /* M�抦 ch廙� tr廕疸g */
+    padding: 3rem 2rem 4rem;       /* Padding cho footer */
+	font-family: 'EB Garamond', serif; /* D羅ng font EB Garamond cho footer */
+	margin-bottom: 0; 
+    width: 100%;                 /* Footer chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+    margin: 0;                   /* Lo廕【 b廙� margin */
+    padding: 3rem 2rem;          /* Padding (�齅� �𤒹�𡃉h ngh藺a 廙� tr礙n) */
+    box-sizing: border-box;      /* �靟漆m b廕υ padding kh繫ng l�𦅙 thay �𤒹�飃 chi廙�u r廙㷌g */
+    left: 0;                     /* C�n tr獺i footer */
+	position: absolute;          /* Footer �𤒹熒t 廙� v廙� tr穩 tuy廙峼 �𤒹�魀 */
+}
+
+.footer-logo {
+    text-align: center;           /* Canh gi廙畝 logo trong footer */
+    margin-bottom: 2rem;          /* Kho廕τg c獺ch b礙n d⑹廙𢹂 logo */
+}
+
+.footer-logo h2 {
+    font-size: 2rem;              /* K穩ch th⑹廙𢲷 ti礙u �𤒹� trong footer */
+    color: #fff4de;              /* M�抦 ch廙� 廕叮 cho ti礙u �𤒹� footer */
+    margin-bottom: 0.3rem;        /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+}
+
+.footer-logo p {
+    font-size: 0.9rem;            /* K穩ch th⑹廙𢲷 ch廙� cho �鰂廕》 m繫 t廕� footer */
+    color: #fca311;              /* M�抦 v�慙g cho tagline */
+}
+
+.footer-info {
+    display: flex;               /* S廙� d廙叩g flexbox cho th繫ng tin footer */
+    justify-content: space-around; /* Canh �𤒹�u c獺c kh廙魀 th繫ng tin */
+    max-width: 1200px;           /* Chi廙�u r廙㷌g t廙魀 �鬭 cho footer */
+    margin: 0 auto;              /* Canh gi廙畝 footer */
+    flex-wrap: wrap;             /* Cho ph矇p c獺c kh廙魀 xu廙𤉋g d簷ng n廕簑 kh繫ng �𤒹誧 ch廙� */
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem;       /* Kho廕τg c獺ch gi廙畝 c獺c kh廙魀 th繫ng tin */
+}
+
+.footer-info h3 {
+    font-size: 1.1rem;           /* K穩ch th⑹廙𢲷 ch廙� ti礙u �𤒹� trong footer */
+    color: #fca311;             /* M�抦 ch廙� v�慙g cho ti礙u �𤒹� */
+    margin-bottom: 1rem;         /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+    position: relative;          /* Cho ph矇p �𤒹�𡃉h v廙� ph廕吵 t廙� con (underline) */
+}
+
+.footer-info h3::after {
+    content: "";                 /* N廙耥 dung r廙瑈g cho underline */
+    position: absolute;          /* �靟�𡃉h v廙� tuy廙峼 �𤒹�魀 cho underline */
+    bottom: -5px;                /* C獺ch d⑹廙𢹂 ti礙u �𤒹� 5px */
+    left: 0;                     /* B廕眩 �𤒹漣u t廙� b礙n tr獺i */
+    width: 40px;                 /* Chi廙�u r廙㷌g c廙吧 underline */
+    height: 2px;                 /* �靟�� d�懢 c廙吧 underline */
+    background-color: #e63946;   /* M�抦 underline �𤒹�� */
+}
+
+.footer-info p {
+    font-size: 0.9rem;           /* K穩ch th⑹廙𢲷 ch廙� cho th繫ng tin footer */
+    margin-bottom: 0.5rem;       /* Kho廕τg c獺ch d⑹廙𢹂 m廙𡟙 d簷ng th繫ng tin */
+    color: #fff4de;             /* M�抦 ch廙� 廕叮 cho th繫ng tin */
+}
+
+.social-icons {
+    display: flex;              /* S廙� d廙叩g flexbox cho c獺c bi廙�u t⑹廙τg m廕》g x瓊 h廙耥 */
+    margin-top: 1rem;           /* Kho廕τg c獺ch tr礙n c獺c bi廙�u t⑹廙τg */
+}
+
+.social-icon {
+    width: 40px;                /* K穩ch th⑹廙𢲷 bi廙�u t⑹廙τg */
+    height: 40px;
+    border-radius: 50%;         /* Bo tr簷n bi廙�u t⑹廙τg */
+    display: flex;              /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 icon */
+    align-items: center;        /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    justify-content: center;    /* C�n gi廙畝 theo chi廙�u ngang */
+    margin-right: 1rem;         /* Kho廕τg c獺ch gi廙畝 c獺c icon */
+    color: transparent;         /* M�抦 ch廙� trong icon �韲唸誨c 廕姊 (ch廙� d羅ng background) */
+    font-size: 0;               /* �靟熒t font-size 0 �𤒹� kh繫ng hi廙�n th廙� ch廙� */
+    transition: all 0.3s ease;  /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g khi hover */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Di chuy廙�n icon l礙n nh廕� khi hover */
+    background-color: #fca311;    /* �靟�飃 m�抦 n廙�n khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Th礙m b籀ng �𤒹�� khi hover */
+}

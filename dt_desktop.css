@@ -1,0 +1,219 @@
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #f5f1ea;
+        font-family: 'EB Garamond', serif;
+        color: #264653;
+    }
+
+    .order-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .order-column {
+        background: #fff4de;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .order-left {
+        flex: 1;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .order-left.show {
+        display: block;
+        opacity: 1;
+    }
+
+    .order-middle {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .order-middle div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+        background: #e0d4be;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .order-middle h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #553d07;
+    }
+
+    .order-middle p {
+        font-size: 14px;
+        color: #14213D;
+        margin-bottom: 10px;
+    }
+
+    .order-middle .option-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .order-middle label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .option-controls {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .option-controls button {
+        background: #6d4c41;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .option-controls button:hover {
+        background: #553d07;
+        transform: scale(1.05);
+    }
+
+    .order-middle textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .order-middle textarea:focus {
+        border-color: #14213D;
+        outline: none;
+        box-shadow: 0 0 5px rgba(20, 33, 61, 0.5);
+    }
+
+    .checkout-btn {
+        display: block;
+        background: #14213D;
+        color: white;
+        text-align: center;
+        padding: 12px 25px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 20px;
+        width: 100%;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .checkout-btn:hover {
+        background: #1d4d75;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Popup Payment */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+        position: relative;
+    }
+
+    .close-popup {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .payment-methods {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .payment-option {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .payment-option img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Card Warning */
+    .card-warning {
+        position: absolute;
+        background: #ff4d4d;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        max-width: 200px;
+    }
+
+    .card-warning.show {
+        opacity: 1;
+    }
+
+    .card-input-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* 廕盯 m廕搾 �𤒹�𡃉h c獺c ph⑹①ng th廙妾 thanh to獺n */
+    .qr-payment, .card-payment {
+        display: none;
+    }
+
+    .qr-payment.active, .card-payment.active {
+        display: block;
+    }
+}

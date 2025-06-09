@@ -1,0 +1,684 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* �𨫠唸�𩵚g d廕南 廕τh */
+    background-size: cover; /* Ph廙� to�慙 b廙� m�慙 h穫nh */
+    background-position: center; /* C�n gi廙畝 */
+    background-repeat: no-repeat; /* Kh繫ng l廕搆 l廕【 */
+    background-attachment: fixed; /* C廙� �𤒹�𡃉h 廕τh n廙�n */
+ font-family: 'EB Garamond', serif;
+    }
+header {
+    background-color: #fff4de;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 2rem;
+}
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2e7d32;
+    text-align: center;
+    font-weight: bold; /* ho廕搾 font-weight: 700; */
+}
+
+
+/* Cart styles */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cart-container {
+        flex-direction: row;
+    }
+}
+
+.cart-items {
+    flex: 2;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.cart-summary {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+/* Gi廙� nguy礙n c獺c style c簷n l廕【 t廙� file g廙倴 */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+	margin-top: 2rem;
+   
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Cart styles */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cart-container {
+        flex-direction: row;
+    }
+}
+
+.cart-items {
+    flex: 2;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.cart-summary {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.item-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.quantity-button:hover {
+    background-color: #eee;
+}
+
+.quantity-value {
+    width: 30px;
+    text-align: center;
+}
+
+.remove-button {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.remove-button:hover {
+    color: #2e7d32;
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.cart-empty p {
+    margin-bottom: 1rem;
+}
+
+.cart-empty button {
+    padding: 0.5rem 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cart-empty button:hover {
+    background-color: #1b5e20;
+}
+
+/* Summary styles */
+.summary-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    color: #2e7d32;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Voucher styles */
+.voucher-container {
+    margin: 1.5rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.voucher-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.voucher-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.voucher-input button {
+    padding: 0.5rem 1rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.voucher-input button:hover {
+    background-color: #1b5e20;
+}
+
+.discount-row {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+/* Class chung cho c廕� hai n繳t */
+.button-common {
+    display: block; /* Gi繳p c獺c n繳t t廙� chi廕禦 to�慙 b廙� chi廙�u r廙㷌g c廙吧 container */
+    width: 200px; /* Ho廕搾 b廕》 c籀 th廙� �𤒹熒t 100% n廕簑 mu廙𤉋 full container */
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #14213D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* �靟� �𤒹漆m b廕υ ch廙� c�n gi廙畝 */
+.button-common {
+    text-align: center;
+    white-space: nowrap; /* Tr獺nh ch廙� xu廙𤉋g d簷ng */
+}
+
+
+/* Hover hi廙杮 廙姊g chung */
+.button-common:hover {
+    background-color: #1b5e20;
+}
+
+.continue-shopping:hover {
+    text-decoration: underline;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.popup-title {
+    font-size: 1.3rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.popup-message {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.popup-close {
+    padding: 0.5rem 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff4de;
+    color: #264653;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #264653;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff4de;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff4de;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1px;
+	margin-bottom: -25px;
+}
+.fredericka-font {
+    font-size: 40px; /* T�ng k穩ch th⑹廙𢲷 ch廙� */
+    font-weight: bold; /* L�𦅙 ch廙� �𤒹滬m h①n */
+    color: #553d07; /* xanh r礙u */
+    margin-bottom: 6px; /* Kho廕τg c獺ch v廙𢹂 logo */
+	 font-family: 'EB Garamond', serif;
+
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.text-container {
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #e63946; /* Red highlight for title */
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+    color: #264653;
+}
+
+
+
+.main-header {
+    background-color: #fff4de;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.9rem 0;
+}
+
+nav ul li {
+    margin: 0 1.0rem;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #14213D; /* Darker blue for nav links */
+    transition: color 0.3s ease;
+    padding: 0.2rem 0;
+    display: block; 
+	letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Red hover effect */
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color:  #14213D;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    color: #fff4de; /* Warm white for contrast */
+    margin-bottom: 0.3rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #fca311; /* Yellow tagline */
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem;
+}
+
+.footer-info h3 {
+    font-size: 1.1rem;
+    color: #fca311; /* Yellow headers */
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #e63946; /* Red underline */
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #fff4de; /* Warm white text */
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+     color: transparent;
+    font-size: 0;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background-color: #fca311; /* Yellow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Animation keyframes for slider */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fredericka-font {
+    font-size: 40px; /* T�ng k穩ch th⑹廙𢲷 ch廙� */
+    font-weight: bold; /* L�𦅙 ch廙� �𤒹滬m h①n */
+    color: #553d07; /* xanh r礙u */
+    margin-bottom: 6px; /* Kho廕τg c獺ch v廙𢹂 logo */
+
+}
+
+/* Delivery Address Section Styling */
+.delivery-address-container {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.delivery-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 10px;
+}
+
+.delivery-form .form-group {
+    margin-bottom: 15px;
+}
+
+.delivery-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.delivery-form input,
+.delivery-form select,
+.delivery-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.delivery-form input:focus,
+.delivery-form select:focus,
+.delivery-form textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.2);
+}
+
+.delivery-form .form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.delivery-form .form-row .form-group {
+    flex: 1;
+}
+
+.delivery-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+    .delivery-form .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Read-only input styling */
+.delivery-form input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Error state for invalid inputs */
+.delivery-form input:invalid,
+.delivery-form select:invalid {
+    border-color: #ff4444;
+}

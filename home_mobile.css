@@ -1,0 +1,869 @@
+/* Global styles */
+:root {
+    /* Color palette */
+    --primary-color: #264653;
+    --secondary-color: #e63946;
+    --background-color: #fff4de;
+    --text-color: #264653;
+    --accent-color: #a8dadc;
+    --dark-accent: #1d3557;
+    --light-text: #f1faee;
+    --link-color: #457b9d;
+    
+    /* Common measurements */
+    --border-radius: 8px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+html{
+    
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* �𨫠唸�𩵚g d廕南 廕τh */
+    background-size: cover; /* Ph廙� to�慙 b廙� m�慙 h穫nh */
+    background-position: center; /* C�n gi廙畝 */
+    background-repeat: no-repeat; /* Kh繫ng l廕搆 l廕【 */
+    background-attachment: fixed; /* C廙� �𤒹�𡃉h 廕τh n廙�n */
+	 font-family: 'EB Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+	
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.fredericka-font {
+    font-size: 25px; /* T�ng k穩ch th⑹廙𢲷 ch廙� */
+    font-weight: bold; /* L�𦅙 ch廙� �𤒹滬m h①n */
+    color: #553d07; /* M�抦 ch廙� (tu廙� ch廙纤h theo th⑹①ng hi廙杮) */
+    margin-bottom: 10px; /* Kho廕τg c獺ch v廙𢹂 logo */
+	 font-family: 'EB Garamond', serif;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.text-container {
+    text-align: left;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #e63946; /* Red highlight for title */
+}
+p {
+    font-size: 10px;
+    margin: 0;
+    color: #264653;
+}
+.main-header {
+    background-color: #fff4de;
+  }
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    background-color: #fff4de;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #264653;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #fff4de;
+    color: var(--secondary-color);
+}
+
+.mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--link-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* Hero Section and Slider */
+#hero {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    height: 100%;
+    position: relative;
+}
+
+.slider {
+    height: 100%;
+    width: 400%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    height: 100%;
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 10;
+}
+
+.slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: #fff;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    width: 50%;
+}
+
+.cta-button a {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
+
+    margin-top: 200px; /* T�ng gi獺 tr廙� n廕簑 mu廙𤉋 t廙另 xu廙𤉋g nhi廙�u h①n */
+}
+
+
+.cta-button a:hover {
+    background-color: #d62c39;
+    transform: translateY(-2px);
+}
+    .image-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .image-small {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        top: 45px;
+        left: -20px;
+    }
+
+    .image-large {
+        width: 280px;
+        height: 280px;
+		left: 100px;
+        object-fit: cover;
+    }
+}
+
+/* Featured Dishes Section */
+#featured-dishes {
+    padding: 3rem 1rem;
+ opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+	 visibility: hidden;
+}
+
+#featured-dishes.show {
+    opacity: 1;
+    transform: translateY(0);
+	 visibility: visible;
+}
+
+#featured-dishes h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--dark-accent);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#featured-dishes h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dish-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dish-card {
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+    transform: scale(0.8) translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.dish-card.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+
+
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dish-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#dish1 {
+    background-image: url('https://file.hstatic.net/1000394081/file/thuong_thuc_thanh_pham_25a24ef5b4b145288b2880e52a748541.png');
+}
+
+#dish2 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-2.png?v=1662973377755');
+}
+
+#dish3 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-mexico.jpg?v=1662973104483');
+}
+.dish-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 1rem;
+    color: #fff;
+}
+
+.dish-title {
+    font-size: 1.5rem;
+	
+    margin-bottom: 0.3rem;
+}
+
+.dish-description {
+    font-size: 1rem;
+    opacity: 0.9;
+	color: white;
+}
+
+
+
+/* About us */
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: 200px;
+    background: url('https://media.istockphoto.com/id/1462277597/photo/mexican-woman-hands-preparing-tacos-al-pastor-and-eating-mexican-food-in-mexico-latin-america.jpg?s=612x612&w=0&k=20&c=7e3GE1A24J9jX8rmui8edDODu6Y3rOjQ4dvJoKNT63E=') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content h2 {
+     color: #553d07; /* xanh r礙u */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-content h3 {
+     color: #553d07; /* xanh r礙u */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+     color: #553d07; /* xanh r礙u */
+    line-height: 1.6;
+    margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.about-cta {
+    margin-top: 19px;
+}
+
+.btn-learn-more {
+    background-color: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-learn-more:hover {
+    background-color: #e65c00;
+}
+
+/* C�n gi廙畝 to�慙 b廙� aside */
+#sustainability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sustainability-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Ti礙u �𤒹� */
+.sustainability-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #553d07;
+    margin-bottom: 30px;
+}
+
+/* Danh s獺ch icon theo chi廙�u d廙㷼 */
+.sustainability-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* M廙𡟙 item */
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(30px);
+}
+
+/* Khi xu廕另 hi廙𡵞, ph廕吵 t廙� s廕� v廙� �齅槃g v廙� tr穩 */
+.icon-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* H穫nh 廕τh */
+.icon-item img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hi廙杮 廙姊g ph籀ng to khi hover */
+.icon-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Icon */
+.icon {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+/* Text */
+.icon-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px 15px;
+}
+.testimonials-subheader {
+    margin-bottom: 30px;
+}
+
+.testimonials-subheader h3 {
+    font-size: 1.9rem;
+    color: #553d07; /* xanh r礙u */
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+.testimonials-subheader p {
+    font-size: 1rem;
+	color: #553d07; /* xanh r礙u */
+	text-align: center;
+	font-weight: bold;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    width: 100%;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.review-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.review-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.review-rating {
+    margin-right: 15px;
+}
+
+.star {
+    font-size: 1rem;
+    color: #ffc107;
+}
+
+.reviewer-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.reviewer-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviewer-name {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Mobile Aside Sections */
+   
+   
+/* Contact Us Section */
+#contact-us {
+  
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+#contact-us p {
+    font-size: 19px;
+     color: #553d07; /* xanh r礙u */
+	     font-weight: bold; /* L�𦅙 ch廙� �𤒹滬m h①n */
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-accent);
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo h2 {
+    font-size: 1.5rem;
+    color: var(--light-text);
+    margin-bottom: 0.2rem;
+}
+
+.footer-logo p {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-info > div {
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.footer-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.footer-info p {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: var(--light-text);
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    background-color: var(--link-color);
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Animation classes */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.nav-menu.show {
+  display: block; /* or whatever display property you need */
+}
+.year-highlight {
+    transition: color 0.5s ease;
+}
+
+/* Animation keyframes */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    nav ul li {
+        border-bottom: none;
+        margin-right: 15px;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem;
+    }
+    
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+    .dish-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .dish-card {
+        width: calc(50% - 1rem);
+    }
+    
+    .promotion-container {
+        flex-direction: row;
+    }
+    
+    .promotion-image {
+        width: 40%;
+        height: auto;
+    }
+    
+    .promotion-content {
+        width: 60%;
+    }
+    
+    .reviews-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .review-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 992px) {
+    .dish-card {
+        width: calc(33.333% - 1.33rem);
+    }
+    
+    .review-card {
+        width: calc(33.333% - 13.33px);
+    }
+    
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-info > div {
+        width: 30%;
+    }
+}  
+

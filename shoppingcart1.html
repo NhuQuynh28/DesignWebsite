@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Tica's Tacos</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <script src="home.js" defer></script>
+	<!-- Desktop and Mobile CSS -->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="shoppingcart_desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="shoppingcart_mobile.css">
+</head>
+<body>
+    <header>
+        <!-- Logo container with restaurant name and tagline -->
+        <div class="logo-container">
+
+            <a href="trang_chu.html">
+                <img src="https://i.imgur.com/VjvAHJy.png"
+                    alt="TICA'S TACO Logo" class="logo">
+
+            </a>
+            <p class="fredericka-font">Tica's Taco</p>
+        </div>
+
+        <!-- Main navigation header -->
+         <div class="main-header">
+            <nav>
+                <!-- Main navigation menu -->
+<ul class="nav-menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="signIn.html">ĐẶT HÀNG</a></li>
+            <li><a href="cuoi_ki.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+<li><a href="home.html?scroll=sustainability">CAM KẾT BỀN VỮNG</a></li>
+<li><a href="home.html?scroll=testimonials">ĐÁNH GIÁ & PHẢN HỒI</a></li>
+        </ul>
+                <!-- Mobile menu hamburger button -->
+                <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Giỏ Hàng Của Bạn</h1>
+
+        <div class="cart-container">
+            <section class="cart-items">
+                <!-- Cart item 1 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/ljvpbwai/781c96dd-ad82-449f-8165-c1c53b37b1b4.JPG" alt="Guacamole và Chips" class="item-image">
+                        <div class="item-info">
+                            <h3>Guacamole và Chips</h3>
+                            <p>Bơ nghiền tươi ngon với hành tây, cà chua, ớt và chanh, ăn kèm tortilla chips.</p>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-button">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-button">+</button>
+                    </div>
+                    <span class="item-price">95.000 vnd</span>
+                    <button class="remove-button">Xóa</button>
+                </div>
+
+                <!-- Cart item 2 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="https://www.seasonsandsuppers.ca/wp-content/uploads/2018/08/tacos-al-pastor-1200.jpg" alt="Pollo Taco" class="item-image">
+                        <div class="item-info">
+                            <h3>Tacos Al Pastor</h3>
+                            <p>Thịt heo ướp gia vị, nướng trên trục quay, ăn kèm dứa và hành tây.</p>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-button">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-button">+</button>
+                    </div>
+                    <span class="item-price">120.000 vnd</span>
+                    <button class="remove-button">Xóa</button>
+                </div>
+
+                <!-- Cart item 3 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="https://res.cloudinary.com/hksqkdlah/image/upload/ar_1:1,c_fill,dpr_2.0,f_auto,fl_lossy.progressive.strip_profile,g_faces:auto,q_auto:low,w_344/SFS_So-Cal_Churros-52_lymfn2" alt="Churros" class="item-image">
+                        <div class="item-info">
+                            <h3>Churros</h3>
+                            <p>Bánh quẩy Tây Ban Nha chiên giòn, rắc đường và quế, ăn kèm sốt sô cô la.</p>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-button">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-button">+</button>
+                    </div>
+                    <span class="item-price">75.000 vnd</span>
+                    <button class="remove-button">Xóa</button>
+                </div>
+
+                <!-- Empty cart state (hidden by default) -->
+                <div class="cart-empty" style="display: none;">
+                    <p>Giỏ hàng của bạn đang trống!</p>
+                    <button>Bắt Đầu Đặt Hàng</button>
+                </div>
+            </section>
+
+            <section class="cart-summary">
+                <h2 class="summary-title">Tóm Tắt Đơn Hàng</h2>
+                <div class="summary-row">
+                    <span>Tổng Phụ</span>
+                    <span id="subTotalDisplay">290.000 vnd</span>
+                </div>
+                <div class="summary-row">
+                    <span>Thuế</span>
+                    <span id="taxDisplay">29.000 vnd</span>
+                </div>
+                <div class="summary-row" id="delivery-row">
+                    <span>Giao Hàng</span>
+                    <span>90.000 vnd</span>
+                </div>
+
+                <div class="delivery-address-container">
+                    <h2 class="delivery-title">Địa Chỉ Nhận Hàng</h2>
+                    <form class="delivery-form">
+                        <div class="form-group">
+                            <label for="address-type">Chọn Địa Chỉ</label>
+                            <select id="address-type" name="address-type">
+                                <option value="">Chọn Loại Địa Chỉ</option>
+                                <option value="home">Địa Chỉ Nhà</option>
+                                <option value="company">Địa Chỉ Công Ty</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="full-name">Họ và Tên</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Số Điện Thoại</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Địa Chỉ Chi Tiết</label>
+                            <input type="text" id="address" name="address" placeholder="Số nhà, đường, phường/xã" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="district">Quận/Huyện</label>
+                                <select id="district" name="district" required>
+                                    <option value="">Chọn Quận/Huyện</option>
+                                    <option value="cau-giay">Cầu Giấy</option>
+                                    <option value="dong-da">Đống Đa</option>
+                                    <option value="ba-dinh">Ba Đình</option>
+                                    <option value="tay-ho">Tây Hồ</option>
+                                    <option value="hoang-mai">Hoàng Mai</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Thành Phố</label>
+                                <input type="text" id="city" name="city" value="Hà Nội" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-note">Ghi Chú Giao Hàng (Tùy Chọn)</label>
+                            <textarea id="delivery-note" name="delivery-note" placeholder="Ví dụ: Giao hàng giờ hành chính, giao tận nơi,..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Voucher section -->
+                <div class="voucher-container">
+                    <label for="voucher">Bạn có mã giảm giá?</label>
+                    <div class="voucher-input">
+                        <input type="text" id="voucher-input" placeholder="Nhập mã giảm giá">
+                        <button id="apply-voucher">Áp Dụng</button>
+                    </div>
+                </div>
+
+                <!-- Discount row (hidden by default) -->
+                <div class="summary-row discount-row" id="discount-row" style="display: none;">
+                    <span>Giảm Giá</span>
+                    <span id="discount-value">-0 vnd</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Tổng Cộng</span>
+                    <span id="total-price">409.000 vnd</span>
+                </div>
+                <a href="dt.html" class="button-common">Tiến Hành Thanh Toán</a>
+<a href="menu.html" class="button-common">Tiếp Tục Mua Sắm</a>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Footer logo -->
+        <div class="footer-logo">
+            <h2>TICA'S TACO</h2>
+            <p>NHÀ HÀNG MÊ-HI-CÔ</p>
+        </div>
+
+        <!-- Footer information sections -->
+        <div class="footer-info">
+            <!-- Opening hours information -->
+            <div class="hours">
+                <h3>GIỜ MỞ CỬA</h3>
+                <p>Thứ 2 - Thứ 6: 11 giờ sáng - 10 giờ tối</p>
+                <p>Thứ 7 - Chủ nhật: 10 giờ sáng - 11 giờ tối</p>
+            </div>
+
+            <!-- Location information -->
+            <div class="location">
+                <h3>ĐỊA ĐIỂM</h3>
+                <p>144 Xuân Thủy</p>
+                <p>Hà Nội, Hà Nội</p>
+            </div>
+
+            <!-- Contact information -->
+            <div class="contact">
+                <h3>LIÊN HỆ</h3>
+                <p>ticastaco@gmail.com</p>
+                <p>098 101 0101</p>
+            </div>
+
+            <!-- Social media links -->
+            <div class="social">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon" id="facebook-icon"
+                        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png'); background-size: cover;"></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon" id="instagram-icon"
+                        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'); background-size: cover;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup elements -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3 class="popup-title">Chúc Mừng!</h3>
+        <p class="popup-message">Mã giảm giá "NHOM10" của bạn đã được áp dụng thành công! Bạn được miễn phí giao hàng cho đơn hàng này.</p>
+        <button class="popup-close" id="close-popup">Đồng Ý</button>
+    </div>
+
+    <script src="shoppingcart.js"></script>
+<script src="https://www.drv.tw/inc/wd.js?s=truongthienan-web-development-lab3-pro-html"></script></body>
+</html>

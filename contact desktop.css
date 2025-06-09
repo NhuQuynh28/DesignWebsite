@@ -1,0 +1,1503 @@
+/* desktop.css */
+/* desktop.css */
+/* ... Other styles ... */
+
+/* Main Content */
+
+
+.contact-banner {
+    padding: 0; /* Loại bỏ padding cho phần banner */
+    background-image: none; /* Loại bỏ ảnh nền */
+    text-align: center; /* Căn giữa chữ trong banner */
+    overflow: hidden; /* Thêm overflow hidden để chứa các ảnh nổi */
+}
+
+/* desktop.css */
+/* ... Other styles ... */
+
+.contact-banner {
+    padding: 0; /* Loại bỏ padding cho phần banner */
+    background-image: none; /* Loại bỏ ảnh nền */
+    text-align: center; /* Căn giữa chữ trong banner */
+    overflow: hidden; /* Thêm overflow hidden để chứa các ảnh nổi */
+}
+
+.banner-3-images {
+    display: flex; /* Sử dụng flexbox để đặt các ảnh cạnh nhau */
+    width: 100%;
+    height: 600px; /* Đặt chiều cao banner */
+}
+
+/* desktop.css */
+.banner-image-container {
+    flex: 1; /* Mỗi container chiếm chiều rộng bằng nhau */
+    position: relative; /* Định vị tương đối để lớp phủ văn bản */
+    overflow: hidden; /* Cắt ảnh nếu tràn ra ngoài */
+    background-size: cover; /* Đảm bảo ảnh phủ kín container */
+    background-position: center; /* Căn giữa ảnh */
+    /* ĐÃ SỬA: Thêm bo tròn góc cho banner images */
+    border-radius: 10px; /* Bo tròn góc 10px, có thể điều chỉnh giá trị này */
+}
+
+/* Corrected background image URLs here */
+#banner-get {
+    background-image: url('https://media.istockphoto.com/id/1146906219/vi/anh/tacos-th%E1%BB%8Bt-b%C3%B2-m%E1%BB%81m-4inch-nh%E1%BB%8F.jpg?s=612x612&w=0&k=20&c=M9w_Twu1MpgKa5WalHWFRJEWOktqIldi3I0pVrfWoh8='); /* URL đúng cho banner-get */
+}
+
+#banner-in {
+    background-image: url('https://img.taste.com.au/R_dRdL7V/taste/2022/09/healthy-tacos-recipe-181113-1.jpg'); /* URL đúng cho banner-in */
+}
+
+#banner-taco {
+    background-image: url('https://media.istockphoto.com/id/658584284/vi/anh/tacos-mexico.jpg?s=170667a&w=0&k=20&c=Az0Bl_YSDHnujZVU9BbgWLh-k-XGU7hLI1-e7AH4u9k='); /* URL đúng cho banner-touch */
+}
+#banner-touch{
+    background-image: url('https://noshnourishwander.com/wp-content/uploads/2022/08/pollo-asado-tacos-7-min.jpg'); /* URL đúng cho banner-touch */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em; /* Điều chỉnh kích thước chữ */
+    color: #fff; /* Màu chữ */
+    text-shadow: 2px 2px 4px #000000; /* Bóng đổ chữ tùy chọn để dễ nhìn hơn */
+}
+
+/* ... Other styles ... */
+
+/* desktop.css */
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* Đường dẫn ảnh */
+    background-size: cover; /* Phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại */
+    background-attachment: fixed; /* **ĐÃ CÓ: Giữ cố định hình nền khi scroll** */
+    font-family: 'EB Garamond', serif; /* Sử dụng font chữ EB Garamond */
+}
+body.fixed-background-body { /* Sử dụng class selector để tăng độ đặc hiệu */
+    background-attachment: fixed;
+    /* ... các style khác cho body ... */
+}
+.container {
+    max-width: 1200px; /* Chiều rộng tối đa của container */
+    margin: 0 auto; /* Căn giữa container */
+    padding: 0 20px; /* Padding hai bên container */
+}
+/* Global styles */
+* {
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+    box-sizing: border-box; /* Thiết lập box-sizing để tính padding và border vào chiều rộng và chiều cao */
+}
+
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* Đường dẫn ảnh */
+    background-size: cover; /* Phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại */
+    background-attachment: fixed; /* **ĐÃ CÓ: Giữ cố định hình nền khi scroll** */
+    font-family: 'EB Garamond', serif; /* Sử dụng font chữ EB Garamond */
+}
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của link */
+    color: #264653; /* Màu chữ cho link */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff4de; /* Màu nền header */
+    position: sticky; /* Giữ header cố định trên đầu trang khi scroll */
+    top: 0; /* Đặt header ở vị trí trên cùng */
+    z-index: 1000; /* Đảm bảo header luôn ở trên các phần tử khác */
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho header */
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh logo và tên nhà hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa logo và tên nhà hàng */
+    padding: 1px; /* Padding nhỏ */
+	margin-bottom: -25px; /* Margin bottom âm để kéo logo lên một chút */
+}
+.fredericka-font {
+    font-size: 40px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    color: #553d07; /* xanh rêu */
+    margin-bottom: 6px; /* Khoảng cách với logo */
+    font-family: 'EB Garamond', cursive; /* Giữ nguyên font này */
+
+}
+.logo {
+    width: 100px; /* Chiều rộng logo */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+}
+
+.text-container {
+    text-align: left; /* Căn trái chữ trong container */
+}
+
+h1 {
+    font-size: 24px; /* Kích thước chữ h1 */
+    margin: 0; /* Loại bỏ margin mặc định */
+    color: #e63946; /* Red highlight for title */
+}
+
+p {
+    font-size: 14px; /* Kích thước chữ p */
+    margin: 0; /* Loại bỏ margin mặc định */
+    color: #264653; /* Màu chữ p */
+}
+
+
+
+.main-header {
+    background-color: #fff4de; /* Màu nền main header giống header */
+}
+
+nav ul {
+    display: flex; /* Sử dụng flexbox cho menu điều hướng */
+    justify-content: center; /* Căn giữa menu */
+    list-style: none; /* Loại bỏ dấu chấm mặc định của list */
+    padding: 0.9rem 0; /* Padding trên dưới cho menu */
+}
+
+nav ul li {
+    margin: 0 1.0rem; /* Margin trái phải giữa các mục menu */
+    position: relative; /* Định vị tương đối cho mục menu để dùng cho dropdown nếu có */
+}
+
+nav ul li a {
+    font-size: 0.9rem; /* Kích thước chữ menu */
+    font-weight: 600; /* Độ đậm chữ menu */
+    color: #14213D; /* Darker blue for nav links */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    padding: 0.2rem 0; /* Padding trên dưới cho link menu */
+    display: block; /* Footer */
+footer {
+    background-color:  #14213D; /* Dark blue footer */
+    color: #fff; /* Màu chữ footer */
+    padding: 3rem 2rem; /* Padding cho footer */
+}
+
+.footer-logo {
+    text-align: center; /* Căn giữa logo footer */
+    margin-bottom: 2rem; /* Margin bottom cho logo footer */
+}
+
+.footer-logo h2 {
+    font-size: 2rem; /* Kích thước chữ h2 trong logo footer */
+    color: #fff4de; /* Warm white for contrast */
+    margin-bottom: 0.3rem; /* Margin bottom nhỏ cho h2 */
+}
+
+.footer-logo p {
+    font-size: 0.9rem; /* Kích thước chữ p trong logo footer */
+    color: #fca311; /* Yellow tagline */
+}
+
+.footer-info {
+    display: flex; /* Sử dụng flexbox cho thông tin footer */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các cột thông tin */
+    max-width: 1200px; /* Chiều rộng tối đa cho thông tin footer */
+    margin: 0 auto; /* Căn giữa thông tin footer */
+    flex-wrap: wrap; /* Cho phép các cột xuống dòng khi không đủ không gian */
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem; /* Margin bottom cho mỗi cột thông tin */
+}
+
+.footer-info h3 {
+    font-size: 1.1rem; /* Kích thước chữ h3 trong thông tin footer */
+    color: #fca311; /* Yellow headers */
+    margin-bottom: 1rem; /* Margin bottom cho h3 */
+    position: relative; /* Định vị tương đối cho h3 để tạo gạch chân */
+}
+
+.footer-info h3::after {
+    content: ""; /* Tạo gạch chân bằng ::after pseudo-element */
+    position: absolute; /* Định vị tuyệt đối trong h3 */
+    bottom: -5px; /* Vị trí dưới cùng của h3 */
+    left: 0; /* Căn trái */
+    width: 40px; /* Chiều rộng gạch chân */
+    height: 2px; /* Chiều cao gạch chân */
+    background-color: #e63946; /* Red underline */
+}
+
+.footer-info p {
+    font-size: 0.9rem; /* Kích thước chữ p trong thông tin footer */
+    margin-bottom: 0.5rem; /* Margin bottom cho p */
+    color: #fff4de; /* Warm white text */
+}
+
+.social-icons {
+    display: flex; /* Sử dụng flexbox cho icon mạng xã hội */
+    margin-top: 1rem; /* Margin top cho icon mạng xã hội */
+}
+
+.social-icon {
+    width: 40px; /* Chiều rộng icon mạng xã hội */
+    height: 40px; /* Chiều cao icon mạng xã hội */
+    border-radius: 50%; /* Bo tròn icon */
+    display: flex; /* Sử dụng flexbox để căn giữa icon */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-right: 1rem; /* Margin phải giữa các icon */
+     color: transparent; /* Ẩn text màu mặc định */
+    font-size: 0; /* Ẩn text size mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng transition cho hover */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Dịch chuyển icon lên trên khi hover */
+    background-color: #fca311; /* Yellow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bóng đổ khi hover */
+}
+
+
+
+/* Animation keyframes for slider */
+@keyframes fade {
+    from {
+        opacity: 0.4; /* Độ trong suốt ban đầu */
+    }
+    to {
+        opacity: 1; /* Độ trong suốt cuối cùng */
+    }
+}
+
+	letter-spacing: 2px; /* Khoảng cách giữa các chữ cái trong menu */
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Red hover effect */
+}
+
+.has-dropdown {
+    position: relative; /* Định vị tương đối cho li có dropdown */
+}
+
+.mobile-menu-btn {
+    display: none; /* Ẩn nút menu mobile trên desktop */
+}
+/* Footer */
+footer {
+    background-color:  #14213D; /* Dark blue footer */
+    color: #fff; /* Màu chữ footer */
+    padding: 3rem 2rem; /* Padding cho footer */
+}
+
+.footer-logo {
+    text-align: center; /* Căn giữa logo footer */
+    margin-bottom: 2rem; /* Margin bottom cho logo footer */
+}
+
+.footer-logo h2 {
+    font-size: 2rem; /* Kích thước chữ h2 trong logo footer */
+    color: #fff4de; /* Warm white for contrast */
+    margin-bottom: 0.3rem; /* Margin bottom nhỏ cho h2 */
+}
+
+.footer-logo p {
+    font-size: 0.9rem; /* Kích thước chữ p trong logo footer */
+    color: #fca311; /* Yellow tagline */
+}
+
+.footer-info {
+    display: flex; /* Sử dụng flexbox cho thông tin footer */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các cột thông tin */
+    max-width: 1200px; /* Chiều rộng tối đa cho thông tin footer */
+    margin: 0 auto; /* Căn giữa thông tin footer */
+    flex-wrap: wrap; /* Cho phép các cột xuống dòng khi không đủ không gian */
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem; /* Margin bottom cho mỗi cột thông tin */
+}
+
+.footer-info h3 {
+    font-size: 1.1rem; /* Kích thước chữ h3 trong thông tin footer */
+    color: #fca311; /* Yellow headers */
+    margin-bottom: 1rem; /* Margin bottom cho h3 */
+    position: relative; /* Định vị tương đối cho h3 để tạo gạch chân */
+}
+
+.footer-info h3::after {
+    content: ""; /* Tạo gạch chân bằng ::after pseudo-element */
+    position: absolute; /* Định vị tuyệt đối trong h3 */
+    bottom: -5px; /* Vị trí dưới cùng của h3 */
+    left: 0; /* Căn trái */
+    width: 40px; /* Chiều rộng gạch chân */
+    height: 2px; /* Chiều cao gạch chân */
+    background-color: #e63946; /* Red underline */
+}
+
+.footer-info p {
+    font-size: 0.9rem; /* Kích thước chữ p trong thông tin footer */
+    margin-bottom: 0.5rem; /* Margin bottom cho p */
+    color: #fff4de; /* Warm white text */
+}
+
+.social-icons {
+    display: flex; /* Sử dụng flexbox cho icon mạng xã hội */
+    margin-top: 1rem; /* Margin top cho icon mạng xã hội */
+}
+
+.social-icon {
+    width: 40px; /* Chiều rộng icon mạng xã hội */
+    height: 40px; /* Chiều cao icon mạng xã hội */
+    border-radius: 50%; /* Bo tròn icon */
+    display: flex; /* Sử dụng flexbox để căn giữa icon */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-right: 1rem; /* Margin phải giữa các icon */
+     color: transparent; /* Ẩn text màu mặc định */
+    font-size: 0; /* Ẩn text size mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng transition cho hover */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Dịch chuyển icon lên trên khi hover */
+    background-color: #fca311; /* Yellow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bóng đổ khi hover */
+}
+
+
+
+/* Animation keyframes for slider */
+@keyframes fade {
+    from {
+        opacity: 0.4; /* Độ trong suốt ban đầu */
+    }
+    to {
+        opacity: 1; /* Độ trong suốt cuối cùng */
+    }
+}
+
+
+.contact-banner {
+    padding: 150px 0; /* Padding trên dưới cho banner liên hệ */
+
+    background-repeat: repeat; /* Lặp lại ảnh nền nếu có */
+    background-position: center; /* Căn giữa ảnh nền */
+    text-align: center; /* Căn giữa chữ trong banner */
+
+}
+
+.contact-text {
+    color: #800000; /* Màu vàng cho chữ */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-us {
+    font-size: 1.5em; /* Kích thước chữ cho phần "contact us" */
+    margin-bottom: 10px; /* Margin bottom */
+    display: flex; /* Sử dụng flexbox để căn chỉnh icon và chữ */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-us img {
+    margin: 0 10px; /* Margin trái phải cho ảnh */
+}
+
+.contact-text h1 {
+    font-size: 5em; /* Kích thước chữ h1 trong banner liên hệ */
+    margin-top: 0; /* Loại bỏ margin top mặc định */
+    line-height: 1.1; /* Khoảng cách dòng */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-details {
+
+    color: #FF8533; /* Màu chữ đen cho phần chi tiết liên hệ */
+    padding: 60px 0; /* Padding trên dưới cho phần chi tiết liên hệ */
+    text-align: center; /* Căn giữa chữ trong phần chi tiết liên hệ */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-details .container {
+    display: flex; /* Sử dụng flexbox để chia cột cho thông tin và form liên hệ */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa hai cột */
+    align-items: flex-start; /* Căn chỉnh các cột lên đầu trang */
+
+}
+
+.contact-info,
+.contact-form {
+    width: 45%; /* Chia đều không gian cho hai cột */
+    text-align: left; /* Canh trái nội dung trong mỗi cột */
+}
+
+.logo-contact img {
+    max-width: 200px; /* Điều chỉnh kích thước logo nếu cần */
+    margin-bottom: 20px; /* Margin bottom cho logo */
+}
+
+
+/* desktop.css */
+.contact-form {
+    /* ... other styles for contact-form ... */
+
+    /* Initially hide and position the form off-screen to the right */
+    opacity: 0; /* Ẩn form ban đầu */
+    transform: translateX(100%); /* Di chuyển form ra khỏi màn hình bên phải */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Thêm transition cho hiệu ứng animation mượt mà */
+}
+
+.contact-form.form-visible {
+    /* Class to make the form visible and move it to its original position */
+    opacity: 1; /* Hiển thị form */
+    transform: translateX(0); /* Di chuyển form về vị trí ban đầu */
+}
+
+
+
+.contact-info img {
+  animation: pulse 1.5s ease-in-out infinite; /* Animation pulse cho ảnh */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Kích thước ban đầu */
+  }
+  50% {
+    transform: scale(1.05); /* Phóng to lên 5% */
+  }
+  100% {
+    transform: scale(1); /* Trở lại kích thước ban đầu */
+  }
+}
+
+
+
+
+
+
+
+
+
+.contact-details h3 {
+    color: #800000; /* Màu tiêu đề nâu cam */
+    font-size: 2em; /* Kích thước chữ h3 trong phần chi tiết liên hệ */
+    margin-bottom: 20px; /* Margin bottom cho h3 */
+    text-align: center; /* Canh giữa tiêu đề */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-details p {
+    line-height: 1.6; /* Khoảng cách dòng cho p trong phần chi tiết liên hệ */
+    margin-bottom: 15px; /* Margin bottom cho p */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-details strong {
+    font-weight: bold; /* Độ đậm chữ strong */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+
+
+/* desktop.css */
+.contact-form .content-text h2 {
+    /* ĐÃ SỬA: Chỉnh sửa kích thước và độ đậm cho tiêu đề "How can we help you?" */
+    color: maroon; /* Màu đỏ đô */
+    margin-bottom: 20px; /* Margin bottom cho h2 */
+    font-size: 2.0em; /* Tăng kích thước chữ, có thể điều chỉnh giá trị này */
+    font-weight: bold; /* Làm đậm chữ */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-form .content-text p {
+    /* ĐÃ SỬA: Chỉnh sửa kích thước và độ đậm cho đoạn văn bản */
+    font-size: 1.2em; /* Tăng kích thước chữ, có thể điều chỉnh giá trị này */
+    font-weight: bold; /* Làm đậm chữ */
+    line-height: 1.8; /* Tăng khoảng cách dòng để dễ đọc hơn nếu cần */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+
+
+
+
+/* desktop.css */
+.contact-form form button[type="submit"] {
+    /* ĐÃ SỬA: Đặt màu đỏ đô cho nút SUBMIT */
+    background-color: maroon; /* Màu đỏ đô */
+    color: white; /* Màu chữ trắng để tương phản */
+    padding: 10px 20px; /* Tùy chỉnh padding cho nút nếu cần */
+    border: none; /* Loại bỏ border mặc định nếu muốn */
+    cursor: pointer; /* Đảm bảo con trỏ chuột hiển thị đúng khi hover */
+    border-radius: 5px; /* Bo tròn góc nút nếu muốn */
+    font-weight: bold; /* Làm đậm chữ trên nút nếu muốn */
+    font-size: 1em; /* Tùy chỉnh kích thước chữ trên nút nếu cần */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-form form button[type="submit"]:hover {
+    /* ĐÃ SỬA: Màu đỏ đô đậm hơn khi hover (tùy chọn) */
+    background-color: #580808; /* Màu đỏ đô đậm hơn một chút */
+}
+
+
+/* desktop.css */
+.contact-form {
+    /* ĐÃ SỬA: Thêm khung và nền trắng nhạt cho form */
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng nhạt, có độ trong suốt 0.8 */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    border-radius: 10px; /* Bo tròn góc form */
+    padding: 20px; /* Thêm padding bên trong form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+
+
+
+
+.contact-btn {
+    position: absolute; /* Định vị tuyệt đối cho nút liên hệ */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa chính xác */
+}
+
+.contact-btn button {
+    background-color: #ff6347; /* Màu cam đỏ (tomato) */
+    color: white; /* Màu chữ trắng */
+    padding: 20px 40px; /* Tăng kích thước padding */
+    border: none; /* Loại bỏ border mặc định */
+    font-size: 20px; /* Tăng kích thước font chữ */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    border-radius: 10px; /* Bo tròn góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.contact-btn button:hover {
+    background-color: #e64a19; /* Màu cam đỏ đậm hơn khi hover */
+}
+.content {
+    padding: 50px; /* Padding cho phần content */
+    text-align: center; /* Căn giữa chữ trong content */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.content-text {
+    width: 80%; /* Chiều rộng phần text trong content */
+    margin: 0 auto; /* Căn giữa phần text */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+.content-text h2 {
+    margin-bottom: 20px; /* Margin bottom cho h2 trong content text */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+form {
+    display: flex; /* Sử dụng flexbox cho form */
+    flex-direction: column; /* Sắp xếp các phần tử form theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử form theo chiều ngang */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+form input, form select, form textarea {
+    width: 50%; /* Chiều rộng các input, select, textarea trong form */
+    padding: 10px; /* Padding cho các input, select, textarea */
+    margin-bottom: 15px; /* Margin bottom cho các input, select, textarea */
+    border: 1px solid #ccc; /* Border cho các input, select, textarea */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+form textarea {
+    height: 150px; /* Chiều cao textarea */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+
+#contact-us {
+    background-color: #fff; /* Màu nền trắng cho section contact-us */
+    padding: 50px; /* Padding cho section contact-us */
+    text-align: center; /* Căn giữa chữ trong section contact-us */
+    border-radius: 10px; /* Bo tròn góc section contact-us */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Bóng đổ cho section contact-us */
+    max-width: 900px; /* Chiều rộng tối đa cho section contact-us */
+    margin: 50px auto; /* Margin trên dưới và căn giữa section contact-us */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+#contact-us p {
+    font-size: 20px; /* Kích thước chữ p trong section contact-us */
+    color: #14213D; /* Màu chữ p trong section contact-us */
+    font-weight: bold; /* Độ đậm chữ p trong section contact-us */
+    margin-bottom: 20px; /* Margin bottom cho p trong section contact-us */
+    font-family: 'EB Garamond', serif; /* ĐÃ SỬA: Sử dụng font EB Garamond */
+}
+
+
+
+
+
+
+.map-container {
+    width: 800px; /* Chiều rộng container bản đồ */
+    height: 450px; /* Chiều cao container bản đồ */
+    margin: 0 auto; /* Căn giữa container bản đồ */
+    border-radius: 8px; /* Bo tròn góc container bản đồ */
+    overflow: hidden; /* Ẩn phần tràn ra ngoài container bản đồ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho container bản đồ */
+}
+
+.map-container iframe {
+    width: 100%; /* Chiều rộng iframe bản đồ */
+    height: 100%; /* Chiều cao iframe bản đồ */
+    border: none; /* Loại bỏ border iframe */
+}
+
+
+/* Footer */
+footer {
+    background-color:  #14213D; /* Dark blue footer */
+    color: #fff; /* Màu chữ footer */
+    padding: 3rem 2rem; /* Padding cho footer */
+}
+
+.footer-logo {
+    text-align: center; /* Căn giữa logo footer */
+    margin-bottom: 2rem; /* Margin bottom cho logo footer */
+}
+
+.footer-logo h2 {
+    font-size: 2rem; /* Kích thước chữ h2 trong logo footer */
+    color: #fff4de; /* Warm white for contrast */
+    margin-bottom: 0.3rem; /* Margin bottom nhỏ cho h2 */
+}
+
+.footer-logo p {
+    font-size: 0.9rem; /* Kích thước chữ p trong logo footer */
+    color: #fca311; /* Yellow tagline */
+}
+
+.footer-info {
+    display: flex; /* Sử dụng flexbox cho thông tin footer */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các cột thông tin */
+    max-width: 1200px; /* Chiều rộng tối đa cho thông tin footer */
+    margin: 0 auto; /* Căn giữa thông tin footer */
+    flex-wrap: wrap; /* Cho phép các cột xuống dòng khi không đủ không gian */
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem; /* Margin bottom cho mỗi cột thông tin */
+}
+
+.footer-info h3 {
+    font-size: 1.1rem; /* Kích thước chữ h3 trong thông tin footer */
+    color: #fca311; /* Yellow headers */
+    margin-bottom: 1rem; /* Margin bottom cho h3 */
+    position: relative; /* Định vị tương đối cho h3 để tạo gạch chân */
+}
+
+.footer-info h3::after {
+    content: ""; /* Tạo gạch chân bằng ::after pseudo-element */
+    position: absolute; /* Định vị tuyệt đối trong h3 */
+    bottom: -5px; /* Vị trí dưới cùng của h3 */
+    left: 0; /* Căn trái */
+    width: 40px; /* Chiều rộng gạch chân */
+    height: 2px; /* Chiều cao gạch chân */
+    background-color: #e63946; /* Red underline */
+}
+
+.footer-info p {
+    font-size: 0.9rem; /* Kích thước chữ p trong thông tin footer */
+    margin-bottom: 0.5rem; /* Margin bottom cho p */
+    color: #fff4de; /* Warm white text */
+}
+
+.social-icons {
+    display: flex; /* Sử dụng flexbox cho icon mạng xã hội */
+    margin-top: 1rem; /* Margin top cho icon mạng xã hội */
+}
+
+.social-icon {
+    width: 40px; /* Chiều rộng icon mạng xã hội */
+    height: 40px; /* Chiều cao icon mạng xã hội */
+    border-radius: 50%; /* Bo tròn icon */
+    display: flex; /* Sử dụng flexbox để căn giữa icon */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-right: 1rem; /* Margin phải giữa các icon */
+     color: transparent; /* Ẩn text màu mặc định */
+    font-size: 0; /* Ẩn text size mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng transition cho hover */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Dịch chuyển icon lên trên khi hover */
+    background-color: #fca311; /* Yellow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bóng đổ khi hover */
+}
+
+
+
+/* Animation keyframes for slider */
+@keyframes fade {
+    from {
+        opacity: 0.4; /* Độ trong suốt ban đầu */
+    }
+    to {
+        opacity: 1; /* Độ trong suốt cuối cùng */
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+.fredericka-font {
+    font-family: 'EB Garamond', cursive; /* Sử dụng font chữ EB Garamond cursive */
+    color: #e63946; /* Red for fancy font */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global styles */
+* {
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+    box-sizing: border-box; /* Thiết lập box-sizing để tính padding và border vào chiều rộng và chiều cao */
+}
+
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* Đường dẫn ảnh */
+    background-size: cover; /* Phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại */
+    background-attachment: fixed; /* Cố định ảnh nền */
+ font-family: 'EB Garamond', serif; /* Sử dụng font chữ EB Garamond */
+    }
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của link */
+    color: #264653; /* Màu chữ cho link */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff4de; /* Màu nền header */
+    position: sticky; /* Giữ header cố định trên đầu trang khi scroll */
+    top: 0; /* Đặt header ở vị trí trên cùng */
+    z-index: 1000; /* Đảm bảo header luôn ở trên các phần tử khác */
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho header */
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh logo và tên nhà hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa logo và tên nhà hàng */
+    padding: 1px; /* Padding nhỏ */
+	margin-bottom: -25px; /* Margin bottom âm để kéo logo lên một chút */
+}
+.fredericka-font {
+    font-size: 40px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    color: #553d07; /* xanh rêu */
+    margin-bottom: 6px; /* Khoảng cách với logo */
+
+}
+.logo {
+    width: 100px; /* Chiều rộng logo */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+}
+
+.text-container {
+    text-align: left; /* Căn trái chữ trong container */
+}
+
+h1 {
+    font-size: 24px; /* Kích thước chữ h1 */
+    margin: 0; /* Loại bỏ margin mặc định */
+    color: #e63946; /* Red highlight for title */
+}
+
+p {
+    font-size: 14px; /* Kích thước chữ p */
+    margin: 0; /* Loại bỏ margin mặc định */
+    color: #264653; /* Màu chữ p */
+}
+
+
+
+.main-header {
+    background-color: #fff4de; /* Màu nền main header giống header */
+}
+
+nav ul {
+    display: flex; /* Sử dụng flexbox cho menu điều hướng */
+    justify-content: center; /* Căn giữa menu */
+    list-style: none; /* Loại bỏ dấu chấm mặc định của list */
+    padding: 0.9rem 0; /* Padding trên dưới cho menu */
+}
+
+nav ul li {
+    margin: 0 1.0rem; /* Margin trái phải giữa các mục menu */
+    position: relative; /* Định vị tương đối cho mục menu để dùng cho dropdown nếu có */
+}
+
+nav ul li a {
+    font-size: 0.9rem; /* Kích thước chữ menu */
+    font-weight: 600; /* Độ đậm chữ menu */
+    color: #14213D; /* Darker blue for nav links */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    padding: 0.2rem 0; /* Padding trên dưới cho link menu */
+    display: block;
+	letter-spacing: 2px; /* Khoảng cách giữa các chữ cái trong menu */
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Red hover effect */
+}
+
+.has-dropdown {
+    position: relative; /* Định vị tương đối cho li có dropdown */
+}
+
+.mobile-menu-btn {
+    display: none; /* Ẩn nút menu mobile trên desktop */
+}
+
+/* Hero Section and Slider */
+#hero {
+    height: 65vh; /* Chiều cao section hero (65% viewport height) */
+    position: relative; /* Định vị tương đối cho section hero */
+    overflow: hidden; /* Ẩn phần tử tràn ra ngoài hero */
+}
+
+/* Image Slider Styles */
+.slider-container {
+    width: 100%; /* Chiều rộng container slider */
+    position: relative; /* Định vị tương đối cho container slider */
+    overflow: hidden; /* Ẩn phần tử tràn ra ngoài slider */
+}
+
+.slider {
+    display: flex; /* Sử dụng flexbox cho slider */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng transition cho slider */
+}
+
+.slide {
+    min-width: 100%; /* Chiều rộng tối thiểu của slide */
+    height: 600px; /* Chiều cao slide */
+    background-size: cover; /* Phủ nền slide */
+    background-position: center; /* Căn giữa nền slide */
+}
+
+.slider-controls {
+    position: absolute; /* Định vị tuyệt đối cho controls slider */
+    bottom: 20px; /* Vị trí bottom */
+    left: 50%; /* Vị trí left */
+    transform: translateX(-50%); /* Dịch chuyển để căn giữa controls */
+    display: flex; /* Sử dụng flexbox cho controls */
+    gap: 10px; /* Khoảng cách giữa các controls */
+    z-index: 5; /* Đảm bảo controls ở trên slide */
+}
+
+.slider-dot {
+    width: 12px; /* Chiều rộng dot slider */
+    height: 12px; /* Chiều cao dot slider */
+    border-radius: 50%; /* Bo tròn dot slider */
+    background-color: rgba(255, 255, 255, 0.5); /* Màu nền dot slider */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng transition cho dot slider */
+}
+
+.slider-dot.active {
+    background-color: #fca311; /* Yellow highlight for active dot */
+}
+
+.slider-arrow {
+    position: absolute; /* Định vị tuyệt đối cho arrow slider */
+    top: 50%; /* Vị trí top */
+    transform: translateY(-80px); /* Dịch chuyển để căn giữa arrow */
+    background: rgba(0, 0, 0, 0.3); /* Màu nền arrow slider */
+    color: white; /* Màu chữ arrow slider */
+    width: 50px; /* Chiều rộng arrow slider */
+    height: 50px; /* Chiều cao arrow slider */
+    display: flex; /* Sử dụng flexbox cho arrow slider */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    border-radius: 50%; /* Bo tròn arrow slider */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    font-size: 20px; /* Kích thước chữ arrow slider */
+    z-index: 10; /* Đảm bảo arrow ở trên controls */
+    transition: background 0.3s ease; /* Hiệu ứng transition cho arrow slider */
+}
+
+.slider-arrow:hover {
+    background: rgba(230, 57, 70, 0.8); /* Red highlight on hover */
+}
+
+.prev-arrow {
+    left: 20px; /* Vị trí arrow prev */
+}
+
+.next-arrow {
+    right: 20px; /* Vị trí arrow next */
+}
+
+/* Responsive adjustments for the slider */
+@media screen and (max-width: 767px) {
+    .slide {
+        height: 300px; /* Giảm chiều cao slide trên mobile */
+    }
+
+    .slider-arrow {
+        width: 40px; /* Giảm chiều rộng arrow trên mobile */
+        height: 30px; /* Giảm chiều cao arrow trên mobile */
+        font-size: 16px; /* Giảm kích thước chữ arrow trên mobile */
+    }
+
+    .slider-dot {
+        width: 10px; /* Giảm chiều rộng dot trên mobile */
+        height: 10px; /* Giảm chiều cao dot trên mobile */
+    }
+}
+
+/* Hero content styling */
+.hero-content {
+    position: absolute; /* Định vị tuyệt đối cho content hero */
+    top: 50%; /* Vị trí top */
+    left: 50%; /* Vị trí left */
+    transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa content hero */
+    text-align: center; /* Căn giữa chữ trong content hero */
+    z-index: 5; /* Đảm bảo content ở trên slider */
+    width: 100%; /* Chiều rộng content hero */
+}
+
+.cta-button a {
+    display: inline-block; /* Hiển thị button inline-block */
+    background-color: #9e2a2b; /* Red CTA button */
+    color: #fff; /* Màu chữ button */
+    padding: 1rem 2rem; /* Padding button */
+    border-radius: 30px; /* Bo tròn button */
+    font-size: 1rem; /* Kích thước chữ button */
+    font-weight: 700; /* Độ đậm chữ button */
+    letter-spacing: 1px; /* Khoảng cách chữ button */
+    transition: all 0.3s ease; /* Hiệu ứng transition cho button */
+    text-transform: uppercase; /* Viết hoa chữ button */
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4); /* Bóng đổ button */
+    margin-top: 5rem; /* Margin top button */
+    line-height: 1.5; /* Khoảng cách dòng button */
+}
+
+.cta-button a:hover {
+    background-color: #fca311; /* Yellow on hover */
+    transform: translateY(-3px); /* Dịch chuyển button lên trên khi hover */
+    box-shadow: 0 6px 20px rgba(252, 163, 17, 0.6); /* Bóng đổ khi hover */
+}
+
+/* Hiệu ứng ẩn ban đầu */
+.hidden {
+    opacity: 0; /* Ẩn phần tử */
+    transform: translateY(20px); /* Dịch chuyển xuống dưới */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng transition cho hiệu ứng ẩn hiện */
+}
+
+/* Khi phần tử xuất hiện trong khung nhìn */
+.show {
+    opacity: 1; /* Hiển thị phần tử */
+    transform: translateY(0); /* Dịch chuyển về vị trí ban đầu */
+}
+
+
+
+/* Featured Dishes Section */
+#featured-dishes {
+    padding: 5rem 2rem; /* Padding section featured dishes */
+   opacity: 0; /* Ẩn section ban đầu */
+    transform: translateY(50px); /* Dịch chuyển section xuống dưới */
+    transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng transition cho hiệu ứng ẩn hiện */
+}
+
+/* Khi section xuất hiện */
+#featured-dishes.show {
+    opacity: 1; /* Hiển thị section */
+    transform: translateY(0); /* Dịch chuyển về vị trí ban đầu */
+}
+
+
+#featured-dishes h2 {
+    text-align: center; /* Căn giữa tiêu đề section featured dishes */
+    font-size: 2rem; /* Kích thước chữ tiêu đề */
+    color: #553d07; /* Màu tiêu đề */
+    margin-bottom: 3rem; /* Margin bottom tiêu đề */
+    position: relative; /* Định vị tương đối cho tiêu đề để tạo gạch chân */
+}
+
+#featured-dishes h2::after {
+    content: ""; /* Tạo gạch chân bằng ::after pseudo-element */
+    width: 80px; /* Chiều rộng gạch chân */
+    height: 3px; /* Chiều cao gạch chân */
+    background-color: #e63946; /* Red underline */
+    position: absolute; /* Định vị tuyệt đối trong h2 */
+    bottom: -15px; /* Vị trí dưới cùng của h2 */
+    left: 50%; /* Căn giữa gạch chân */
+    transform: translateX(-50%); /* Dịch chuyển để căn giữa gạch chân */
+}
+
+.dish-container {
+    display: flex; /* Sử dụng flexbox cho container món ăn */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các card món ăn */
+    margin: 0 auto; /* Căn giữa container món ăn */
+    max-width: 1200px; /* Chiều rộng tối đa container món ăn */
+}
+
+.dish-card {
+    width: 30%; /* Chiều rộng card món ăn */
+    border-radius: 8px; /* Bo tròn góc card món ăn */
+    overflow: hidden; /* Ẩn phần tử tràn ra ngoài card món ăn */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng đổ card món ăn */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Hiệu ứng transition cho card món ăn */
+    opacity: 0; /* Ẩn card ban đầu */
+    transform: scale(0.8) translateY(30px); /* Thu nhỏ và dịch chuyển xuống dưới card ban đầu */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+   background-color: #fff; /* White card on warm background */
+}
+
+#featured-dishes.show .dish-card {
+    opacity: 1; /* Hiển thị card */
+    transform: scale(1) translateY(0); /* Dịch chuyển về vị trí và kích thước ban đầu */
+}
+
+
+.dish-card:hover {
+    transform: translateY(-5px); /* Dịch chuyển card lên trên khi hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Bóng đổ khi hover */
+	transform: scale(1.1); /* Phóng to card khi hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ khi hover */
+}
+
+.dish-image {
+    height: 300px; /* Chiều cao ảnh món ăn */
+    background-size: cover; /* Phủ nền ảnh món ăn */
+    background-position: center; /* Căn giữa nền ảnh món ăn */
+    position: relative; /* Định vị tương đối cho ảnh món ăn để dùng cho overlay */
+}
+
+#dish1 {
+    background-image: url('https://file.hstatic.net/1000394081/file/thuong_thuc_thanh_pham_25a24ef5b4b145288b2880e52a748541.png'); /* Ảnh món ăn 1 */
+}
+
+#dish2 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-2.png?v=1662973377755'); /* Ảnh món ăn 2 */
+}
+
+#dish3 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-mexico.jpg?v=1662973104483'); /* Ảnh món ăn 3 */
+}
+
+.dish-overlay {
+    position: absolute; /* Định vị tuyệt đối cho overlay món ăn */
+    bottom: 0; /* Vị trí bottom */
+    left: 0; /* Vị trí left */
+    right: 0; /* Vị trí right */
+    background: linear-gradient(to top, rgba(20, 33, 61, 0.8), transparent); /* Dark blue gradient */
+    padding: 1.5rem; /* Padding overlay */
+    color: #fff; /* Màu chữ overlay */
+    transform: translateY(0);
+
+
+	 opacity: 0; /* Ẩn overlay ban đầu */
+    transform: translateY(30px); /* Dịch chuyển overlay xuống dưới ban đầu */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Hiệu ứng transition cho overlay */
+}
+
+/* Hover effect - Hiện overlay */
+.dish-card:hover .dish-overlay {
+    opacity: 1; /* Hiển thị overlay khi hover card */
+    transform: translateY(0); /* Dịch chuyển overlay về vị trí ban đầu khi hover card */
+}
+
+.dish-card:hover .dish-overlay {
+    transform: translateY(-10px); /* Dịch chuyển overlay lên trên một chút khi hover card */
+}
+
+.dish-title {
+    font-size: 1.9rem; /* Kích thước chữ tiêu đề món ăn */
+    margin-bottom: 0.5rem; /* Margin bottom tiêu đề món ăn */
+    color: white; /* Màu chữ tiêu đề món ăn */
+}
+
+.dish-description {
+    font-size: 0.9rem; /* Kích thước chữ mô tả món ăn */
+    opacity: 0.9; /* Độ trong suốt mô tả món ăn */
+	color: white; /* Màu chữ mô tả món ăn */
+}
+
+
+
+
+.about-container {
+    display: flex; /* Sử dụng flexbox cho container about */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 50px; /* Padding container about */
+    background-color: white; /* Màu nền container about */
+    max-width: 1200px; /* Chiều rộng tối đa container about */
+    margin: auto; /* Căn giữa container about */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ container about */
+    border-radius: 10px; /* Bo tròn góc container about */
+	 opacity: 0; /* Ẩn container ban đầu */
+    transform: translateY(50px); /* Dịch chuyển container xuống dưới ban đầu */
+    transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng transition cho hiệu ứng ẩn hiện */
+}
+
+.about-container.show {
+    opacity: 1; /* Hiển thị container */
+    transform: translateY(0); /* Dịch chuyển về vị trí ban đầu */
+}
+
+.about-image {
+    flex: 1; /* Chiếm 1 phần không gian còn lại */
+    background: url('https://media.istockphoto.com/id/1462277597/photo/mexican-woman-hands-preparing-tacos-al-pastor-and-eating-mexican-food-in-mexico-latin-america.jpg?s=612x612&w=0&k=20&c=7e3GE1A24J9jX8rmui8edDODu6Y3rOjQ4dvJoKNT63E=') no-repeat center center; /* Ảnh about */
+    background-size: cover; /* Phủ nền ảnh about */
+    height: 700px; /* Chiều cao ảnh about */
+    border-radius: 10px; /* Bo tròn góc ảnh about */
+	    opacity: 0; /* Ẩn ảnh ban đầu */
+    transform: translateX(-50px); /* Dịch chuyển ảnh sang trái ban đầu */
+    transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng transition cho hiệu ứng ẩn hiện */
+}
+.about-container.show .about-image {
+    opacity: 1; /* Hiển thị ảnh */
+    transform: translateX(0); /* Dịch chuyển về vị trí ban đầu */
+}
+
+.about-content {
+    flex: 1; /* Chiếm 1 phần không gian còn lại */
+    padding: 20px; /* Padding content about */
+    text-align: left; /* Căn trái chữ trong content about */
+}
+
+.about-content h2 {
+    color: #553d07; /* Màu tiêu đề content about */
+    font-size: 32px; /* Kích thước chữ h2 content about */
+    margin-bottom: 10px; /* Margin bottom h2 content about */
+}
+
+.about-content h3 {
+    color: #553d07; /* Màu tiêu đề phụ content about */
+    font-size: 24px; /* Kích thước chữ h3 content about */
+    margin-bottom: 20px; /* Margin bottom h3 content about */
+}
+
+.about-content p {
+    color: #553d07; /* Màu chữ p content about */
+    line-height: 1.6; /* Khoảng cách dòng p content about */
+    margin-bottom: 15px; /* Margin bottom p content about */
+}
+
+.about-cta {
+    margin-top: 20px; /* Margin top cta about */
+}
+
+.btn-learn-more {
+    background-color: #9e2a2b; /* Màu nền button learn more */
+    color: white; /* Màu chữ button learn more */
+    padding: 10px 20px; /* Padding button learn more */
+    text-decoration: none; /* Loại bỏ gạch chân button learn more */
+    border-radius: 5px; /* Bo tròn góc button learn more */
+    font-weight: bold; /* Độ đậm chữ button learn more */
+}
+
+.btn-learn-more:hover {
+    background-color: #e65c00; /* Màu nền button learn more khi hover */
+}
+
+
+
+/* Căn giữa toàn bộ aside */
+#sustainability {
+    display: flex; /* Sử dụng flexbox cho section sustainability */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 30px 10px; /* Padding section sustainability */
+    min-height: 500px; /* Chiều cao tối thiểu section sustainability */
+}
+
+.sustainability-container {
+    text-align: center; /* Căn giữa chữ trong container sustainability */
+    max-width: 1200px; /* Chiều rộng tối đa container sustainability */
+    width: 100%; /* Chiều rộng container sustainability */
+}
+
+/* Tiêu đề */
+.sustainability-container h2 {
+    font-size: 36px; /* Kích thước chữ tiêu đề sustainability */
+    font-weight: bold; /* Độ đậm chữ tiêu đề sustainability */
+    color: #553d07; /* Màu tiêu đề sustainability */
+    text-align: center; /* Căn giữa tiêu đề sustainability */
+    margin-bottom: 40px; /* Margin bottom tiêu đề sustainability */
+}
+
+/* Căn chỉnh icon và text theo dạng xen kẽ */
+.sustainability-icons {
+    display: flex; /* Sử dụng flexbox cho container icon sustainability */
+    flex-direction: column; /* Sắp xếp các item theo chiều dọc */
+    align-items: center; /* Căn giữa các item theo chiều ngang */
+    gap: 40px; /* Khoảng cách giữa các item */
+    width: 100%; /* Chiều rộng container icon sustainability */
+}
+
+/* Mỗi item */
+.icon-item {
+    display: flex; /* Sử dụng flexbox cho item icon */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Phân bổ đều khoảng cách giữa ảnh và text */
+    width: 90%; /* Chiều rộng item icon */
+    max-width: 900px; /* Chiều rộng tối đa item icon */
+    opacity: 0; /* Ẩn item ban đầu */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Hiệu ứng transition cho hiệu ứng ẩn hiện */
+}
+
+/* Các phần tử lẻ (1, 3, 5...) */
+.icon-item:nth-child(odd) {
+    flex-direction: row; /* Ảnh bên trái, text bên phải */
+    text-align: left; /* Căn trái text */
+    transform: translateX(-50px); /* Dịch chuyển sang trái ban đầu */
+}
+
+/* Các phần tử chẵn (2, 4, 6...) */
+.icon-item:nth-child(even) {
+    flex-direction: row-reverse; /* Ảnh bên phải, text bên trái */
+    text-align: right; /* Căn phải text */
+    transform: translateX(50px); /* Dịch chuyển sang phải ban đầu */
+}
+
+/* Khi xuất hiện, phần tử sẽ về đúng vị trí */
+.icon-item.visible {
+    opacity: 1; /* Hiển thị item */
+    transform: translateX(0); /* Dịch chuyển về vị trí ban đầu */
+}
+
+/* Hình ảnh */
+.icon-item img {
+    width: 250px; /* Chiều rộng ảnh icon */
+    height: auto; /* Chiều cao tự động */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 10px; /* Bo tròn góc ảnh */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng transition cho ảnh */
+}
+
+/* Hiệu ứng phóng to khi hover */
+.icon-item:hover img {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+/* Icon */
+.icon {
+    font-size: 40px; /* Kích thước icon */
+    margin: 0 20px; /* Margin icon */
+}
+
+/* Text */
+.icon-item p {
+    font-size: 22px; /* Kích thước chữ p icon */
+    font-weight: bold; /* Độ đậm chữ p icon */
+    color: #333; /* Màu chữ p icon */
+    max-width: 300px; /* Chiều rộng tối đa p icon */
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    padding: 80px 20px; /* Padding section testimonials */
+    background-color: #fff4de; /* Màu nền section testimonials */
+}
+
+
+.testimonials-subheader {
+    text-align: center; /* Căn giữa subheader testimonials */
+    margin-bottom: 40px; /* Margin bottom subheader testimonials */
+}
+
+.testimonials-subheader h3 {
+    font-size: 1.8rem; /* Kích thước chữ h3 subheader testimonials */
+    color: #14213D; /* Màu h3 subheader testimonials */
+    margin-bottom: 5px; /* Margin bottom h3 subheader testimonials */
+}
+
+.testimonials-subheader p {
+    font-size: 1.1rem; /* Kích thước chữ p subheader testimonials */
+    color: #264653; /* Màu p subheader testimonials */
+}
+
+.reviews-container {
+    display: flex; /* Sử dụng flexbox cho container review */
+    justify-content: space-between; /* Phân bổ đều khoảng cách giữa các card review */
+    gap: 30px; /* Khoảng cách giữa các card review */
+    margin-bottom: 30px; /* Margin bottom container review */
+}
+
+.review-card {
+    flex: 1; /* Chiếm 1 phần không gian còn lại */
+    padding: 25px; /* Padding card review */
+    background-color: #fff; /* Màu nền card review */
+    border-radius: 10px; /* Bo tròn góc card review */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* Bóng đổ card review */
+    display: flex; /* Sử dụng flexbox cho card review */
+    flex-direction: column; /* Sắp xếp các phần tử card theo chiều dọc */
+    justify-content: space-between; /* Phân bổ đều khoảng cách giữa content và footer */
+}
+
+.review-content {
+    margin-bottom: 20px; /* Margin bottom content review */
+}
+
+.review-content p {
+    color: #264653; /* Màu chữ p content review */
+    line-height: 1.6; /* Khoảng cách dòng p content review */
+    font-size: 0.95rem; /* Kích thước chữ p content review */
+}
+
+.review-footer {
+    display: flex; /* Sử dụng flexbox cho footer review */
+    flex-direction: column; /* Sắp xếp các phần tử footer theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử footer theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các phần tử footer */
+}
+
+.review-rating {
+    margin-bottom: 10px; /* Margin bottom rating review */
+}
+
+.star {
+    color: #ddd; /* Màu sao chưa filled */
+    font-size: 1.2rem; /* Kích thước sao */
+}
+
+.star.filled {
+    color: #fca311; /* Yellow stars */
+}
+
+.reviewer-icon {
+    width: 50px; /* Chiều rộng icon reviewer */
+    height: 50px; /* Chiều cao icon reviewer */
+    border-radius: 50%; /* Bo tròn icon reviewer */
+    overflow: hidden; /* Ẩn phần tử tràn ra ngoài icon reviewer */
+    background-color: #e9ecef; /* Màu nền icon reviewer */
+    display: flex; /* Sử dụng flexbox cho icon reviewer */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.reviewer-icon img {
+    width: 100%; /* Chiều rộng ảnh reviewer */
+    height: 100%; /* Chiều cao ảnh reviewer */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.reviewer-name {
+    font-size: 0.9rem; /* Kích thước chữ tên reviewer */
+    color: #14213D; /* Màu tên reviewer */
+}
+
+.testimonials-pagination {
+    display: flex; /* Sử dụng flexbox cho pagination testimonials */
+    justify-content: center; /* Căn giữa pagination testimonials */
+    margin-top: 30px; /* Margin top pagination testimonials */
+}
+
+.pagination-indicator {
+    width: 100px; /* Chiều rộng indicator pagination */
+    height: 4px; /* Chiều cao indicator pagination */
+    background-color: #ddd; /* Màu nền indicator pagination */
+    border-radius: 2px; /* Bo tròn góc indicator pagination */
+    position: relative; /* Định vị tương đối cho indicator pagination để dùng cho ::after */
+}
+
+.pagination-indicator::after {
+    content: ''; /* Tạo indicator active bằng ::after pseudo-element */
+    position: absolute; /* Định vị tuyệt đối trong indicator */
+    left: 0; /* Vị trí left */
+    top: 0; /* Vị trí top */
+    width: 33%; /* Chiều rộng indicator active */
+    height: 100%; /* Chiều cao indicator active */
+    background-color: #e63946; /* Red indicator */
+    border-radius: 2px; /* Bo tròn góc indicator active */
+}
+
+   /* Desktop Aside Sections */
+
+
+
+
+#contact-us {
+    background-color: #fff; /* Màu nền section contact-us */
+    padding: 50px; /* Padding section contact-us */
+    text-align: center; /* Căn giữa chữ trong section contact-us */
+    border-radius: 10px; /* Bo tròn góc section contact-us */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Bóng đổ section contact-us */
+    max-width: 900px; /* Chiều rộng tối đa section contact-us */
+    margin: 50px auto; /* Margin trên dưới và căn giữa section contact-us */
+}
+
+#contact-us p {
+    font-size: 20px; /* Kích thước chữ p trong section contact-us */
+    color: #14213D; /* Màu chữ p trong section contact-us */
+    font-weight: bold; /* Độ đậm chữ p trong section contact-us */
+    margin-bottom: 20px; /* Margin bottom cho p trong section contact-us */
+	text-align: center; /* Căn giữa chữ p trong section contact-us */
+}
+
+.map-container {
+    width: 800px; /* Chiều rộng container bản đồ */
+    height: 450px; /* Chiều cao container bản đồ */
+    margin: 0 auto; /* Căn giữa container bản đồ */
+    border-radius: 8px; /* Bo tròn góc container bản đồ */
+    overflow: hidden; /* Ẩn phần tràn ra ngoài container bản đồ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho container bản đồ */
+}
+
+.map-container iframe {
+    width: 100%; /* Chiều rộng iframe bản đồ */
+    height: 100%; /* Chiều cao iframe bản đồ */
+    border: none; /* Loại bỏ border iframe */
+}

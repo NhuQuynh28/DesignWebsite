@@ -1,0 +1,804 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/486377678_122171070344292669_8116921263915377259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHPwUpps5A8Q7kNvgFTlGGV&_nc_oc=AdlfgNJSd18N_uwaJ187DzGXMvcsCmkYbiUUMVbcKX5bQbCbMFHYMOAYsnnYwNbWw0c&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_gid=wdWrbJ8OGjLJ7xAnQqP6Fg&oh=00_AYG6ZvLd5drfPoW0CDBoQNb4Lu5DQFqNHkB6Z5wB2d_6rQ&oe=67E87695'); /* Đường dẫn ảnh */
+    background-size: cover; /* Phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại */
+    background-attachment: fixed; /* Cố định ảnh nền */
+ font-family: 'EB Garamond', serif;
+    }
+
+a {
+    text-decoration: none;
+    color: #264653;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff4de;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1px;
+	margin-bottom: -25px;
+}
+.fredericka-font {
+    font-size: 40px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    color: #553d07; /* xanh rêu */
+    margin-bottom: 6px; /* Khoảng cách với logo */
+
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.text-container {
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #e63946; /* Red highlight for title */
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+    color: #264653;
+}
+
+
+
+.main-header {
+    background-color: #fff4de;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.9rem 0;
+}
+
+nav ul li {
+    margin: 0 1.0rem;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #14213D; /* Darker blue for nav links */
+    transition: color 0.3s ease;
+    padding: 0.2rem 0;
+    display: block; 
+	letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Red hover effect */
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+/* Hero Section and Slider */
+#hero {
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image Slider Styles */
+.slider-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: #fca311; /* Yellow highlight for active dot */
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80px);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background: rgba(230, 57, 70, 0.8); /* Red highlight on hover */
+}
+
+.prev-arrow {
+    left: 20px;
+}
+
+.next-arrow {
+    right: 20px;
+}
+
+/* Responsive adjustments for the slider */
+@media screen and (max-width: 767px) {
+    .slide {
+        height: 300px;
+    }
+    
+    .slider-arrow {
+        width: 40px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .slider-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Hero content styling */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+}
+
+.cta-button a {
+    display: inline-block;
+    background-color: #9e2a2b; /* Red CTA button */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    margin-top: 5rem;
+    line-height: 1.5;
+}
+
+.cta-button a:hover {
+    background-color: #fca311; /* Yellow on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(252, 163, 17, 0.6);
+}
+
+/* Hiệu ứng ẩn ban đầu */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Khi phần tử xuất hiện trong khung nhìn */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Featured Dishes Section */
+#featured-dishes {
+    padding: 5rem 2rem;
+   opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Khi section xuất hiện */
+#featured-dishes.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#featured-dishes h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #553d07;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#featured-dishes h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #e63946; /* Red underline */
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dish-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.dish-card {
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;   
+   background-color: #fff; /* White card on warm background */
+}
+
+#featured-dishes.show .dish-card {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dish-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#dish1 {
+    background-image: url('https://file.hstatic.net/1000394081/file/thuong_thuc_thanh_pham_25a24ef5b4b145288b2880e52a748541.png');
+}
+
+#dish2 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-2.png?v=1662973377755');
+}
+
+#dish3 {
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-mexico.jpg?v=1662973104483');
+}
+
+.dish-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(20, 33, 61, 0.8), transparent); /* Dark blue gradient */
+    padding: 1.5rem;
+    color: #fff;
+    transform: translateY(0);
+
+	
+	 opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover effect - Hiện overlay */
+.dish-card:hover .dish-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dish-card:hover .dish-overlay {
+    transform: translateY(-10px);
+}
+
+.dish-title {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.dish-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+	color: white;
+}
+
+
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+	 opacity: 0; /* Ẩn trước khi xuất hiện */
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-image {
+    flex: 1;
+    background: url('https://media.istockphoto.com/id/1462277597/photo/mexican-woman-hands-preparing-tacos-al-pastor-and-eating-mexican-food-in-mexico-latin-america.jpg?s=612x612&w=0&k=20&c=7e3GE1A24J9jX8rmui8edDODu6Y3rOjQ4dvJoKNT63E=') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    border-radius: 10px;
+	    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.about-container.show .about-image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-content h2 {
+    color: #553d07;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-content h3 {
+    color: #553d07;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #553d07;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-cta {
+    margin-top: 20px;
+}
+
+.btn-learn-more {
+    background-color: #9e2a2b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-learn-more:hover {
+    background-color: #e65c00;
+}
+
+
+
+/* Căn giữa toàn bộ aside */
+#sustainability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    min-height: 500px;
+}
+
+.sustainability-container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Tiêu đề */
+.sustainability-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #553d07;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Căn chỉnh icon và text theo dạng xen kẽ */
+.sustainability-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Mỗi item */
+.icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Các phần tử lẻ (1, 3, 5...) */
+.icon-item:nth-child(odd) {
+    flex-direction: row; /* Ảnh bên trái, text bên phải */
+    text-align: left;
+    transform: translateX(-50px);
+}
+
+/* Các phần tử chẵn (2, 4, 6...) */
+.icon-item:nth-child(even) {
+    flex-direction: row-reverse; /* Ảnh bên phải, text bên trái */
+    text-align: right;
+    transform: translateX(50px);
+}
+
+/* Khi xuất hiện, phần tử sẽ về đúng vị trí */
+.icon-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hình ảnh */
+.icon-item img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hiệu ứng phóng to khi hover */
+.icon-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Icon */
+.icon {
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+/* Text */
+.icon-item p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    max-width: 300px;
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    padding: 80px 20px;
+    background-color: #fff4de;
+}
+
+
+.testimonials-subheader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-subheader h3 {
+    font-size: 1.8rem;
+    color: #14213D;
+    margin-bottom: 5px;
+}
+
+.testimonials-subheader p {
+    font-size: 1.1rem;
+    color: #264653;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    flex: 1;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-content {
+    margin-bottom: 20px;
+}
+
+.review-content p {
+    color: #264653;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.review-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-rating {
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.star.filled {
+    color: #fca311; /* Yellow stars */
+}
+
+.reviewer-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewer-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviewer-name {
+    font-size: 0.9rem;
+    color: #14213D;
+}
+
+.testimonials-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-indicator {
+    width: 100px;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 2px;
+    position: relative;
+}
+
+.pagination-indicator::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    background-color: #e63946; /* Red indicator */
+    border-radius: 2px;
+}
+
+   /* Desktop Aside Sections */
+    
+
+
+
+
+#contact-us {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+#contact-us p {
+    font-size: 20px;
+    color: #14213D;
+    font-weight: bold;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.map-container {
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color:  #14213D; /* Dark blue footer */
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    color: #fff4de; /* Warm white for contrast */
+    margin-bottom: 0.3rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #fca311; /* Yellow tagline */
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-info > div {
+    margin-bottom: 1.5rem;
+}
+
+.footer-info h3 {
+    font-size: 1.1rem;
+    color: #fca311; /* Yellow headers */
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #e63946; /* Red underline */
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #fff4de; /* Warm white text */
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+     color: transparent;
+    font-size: 0;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background-color: #fca311; /* Yellow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Animation keyframes for slider */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

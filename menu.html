@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Thiết lập bộ mã ký tự UTF-8 và cấu hình viewport cho responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tiêu đề của trang web -->
+    <title>TICA'S TACO - Nhà Hàng Mê-hi-cô</title>
+    
+    <!-- Liên kết tới Google Fonts để sử dụng font 'EB Garamond' -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <script src="home.js" defer></script>
+    <!-- Liên kết tới thư viện AOS để sử dụng hiệu ứng animation khi cuộn trang -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Liên kết tới file CSS cho phiên bản mobile (áp dụng khi màn hình có chiều rộng <= 767px) -->
+    <link rel="stylesheet" href="menumobile.css" media="screen and (max-width: 767px)">
+    
+    <!-- Liên kết tới file CSS cho phiên bản desktop (áp dụng khi màn hình có chiều rộng >= 768px) -->
+    <link rel="stylesheet" href="menudesktop.css" media="screen and (min-width: 768px)">
+    
+    <!-- Liên kết tới file JavaScript menu.js, dùng thuộc tính defer để tải sau khi HTML được parse -->
+    <script src="menu.js" defer></script>
+	<script src="home.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Container chứa logo và tên thương hiệu -->
+        <div class="logo-container">
+            <!-- Liên kết logo về trang chủ -->
+            <a href="home.html">
+                <!-- Hình ảnh logo -->
+                <img src="https://i.imgur.com/VjvAHJy.png" alt="TICA'S TACO Logo" class="logo">
+            </a>
+            <!-- Tên thương hiệu, dùng font chữ 'EB Garamond' -->
+            <a class="fredericka-font" href="home.html">TICA'S TACO</a>
+        </div>
+        
+        <!-- Phần header chính chứa thanh điều hướng -->
+        <div class="main-header">
+            <nav>
+                <!-- Danh sách menu chính -->
+<ul class="nav-menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="signIn.html">ĐẶT HÀNG</a></li>
+            <li><a href="cuoi_ki.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+           <li><a href="home.html?scroll=sustainability">CAM KẾT BỀN VỮNG</a></li>
+<li><a href="home.html?scroll=testimonials">ĐÁNH GIÁ & PHẢN HỒI</a></li>
+        </ul>
+                <!-- Nút menu hamburger hiển thị trên mobile -->
+                <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <!-- Các span tạo thành biểu tượng 3 gạch ngang -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Phần Hero: giới thiệu trang chủ với tiêu đề, mô tả và nút gọi hành động -->
+        <section class="hero">
+            <div class="hero-content">
+                <!-- Tiêu đề với hiệu ứng animation fadeInDown -->
+                <h1 class="animate__animated animate__fadeInDown">Hương Vị Mexico Chân Thực</h1>
+                <!-- Mô tả với hiệu ứng fadeInUp và độ trễ 0.5s -->
+                <p class="animate__animated animate__fadeInUp animate__delay-0-5s">
+                    Thưởng thức những món ăn Mexico truyền thống, đậm đà bản sắc.
+                </p>
+                <!-- Nút "Xem Thực Đơn" với hiệu ứng fadeInUp, khi bấm sẽ cuộn xuống phần thực đơn -->
+                <a href="#menu" class="button animate__animated animate__fadeInUp animate__delay-1s">
+                    Xem Thực Đơn
+                </a>
+            </div>
+            <!-- Div chứa hình ảnh minh họa cho phần hero với hiệu ứng slideInRight -->
+            <div class="hero-image animate__animated animate__slideInRight"></div>
+        </section>
+
+        <!-- Phần Thực Đơn: hiển thị các món ăn được phân loại -->
+        <section id="menu" class="menu">
+            <!-- Tiêu đề của phần thực đơn với hiệu ứng fadeIn -->
+            <h2 class="animate__animated animate__fadeIn">Khám Phá Thực Đơn Mexico</h2>
+            <!-- Các nút để lọc món ăn theo danh mục, dùng thuộc tính data-category để xử lý qua JavaScript -->
+            <div class="menu-categories animate__animated animate__fadeInUp">
+                <button class="category-button active" data-category="all">Tất cả</button>
+                <button class="category-button" data-category="antojitos">Khai Vị (Antojitos)</button>
+                <button class="category-button" data-category="platos-fuertes">Món Chính (Platos Fuertes)</button>
+                <button class="category-button" data-category="postres">Tráng Miệng (Postres)</button>
+                <button class="category-button" data-category="bebidas">Đồ Uống (Bebidas)</button>
+            </div>
+            <!-- Lưới hiển thị các món ăn -->
+            <div class="menu-items-grid">
+                <!-- Mỗi khối menu-item thể hiện một món ăn -->
+                <div class="menu-item animate__animated animate__slideInUp" data-category="antojitos">
+                    <!-- Hình ảnh món ăn -->
+                    <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/ljvpbwai/781c96dd-ad82-449f-8165-c1c53b37b1b4.JPG" alt="Guacamole">
+                    <!-- Tên món ăn -->
+                    <h3>Guacamole và Chips</h3>
+                    <!-- Mô tả món ăn -->
+                    <p class="description">
+                        Bơ nghiền tươi ngon với hành tây, cà chua, ớt và chanh, ăn kèm tortilla chips.
+                    </p>
+                    <!-- Giá của món ăn -->
+                    <span class="price">95.000 vnd</span>
+                    <!-- Nút thêm món ăn vào giỏ hàng, dẫn tới trang đăng nhập -->
+                    <a href="signIn.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+                 <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="platos-fuertes">
+                    <img src="https://www.seasonsandsuppers.ca/wp-content/uploads/2018/08/tacos-al-pastor-1200.jpg" alt="Tacos Al Pastor">
+                    <h3>Tacos Al Pastor (3 chiếc)</h3>
+                    <p class="description">Thịt heo ướp gia vị, nướng trên trục quay, ăn kèm dứa và hành tây.</p>
+                    <span class="price">120.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-4s" data-category="postres">
+                    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/ar_1:1,c_fill,dpr_2.0,f_auto,fl_lossy.progressive.strip_profile,g_faces:auto,q_auto:low,w_344/SFS_So-Cal_Churros-52_lymfn2" alt="Churros">
+                    <h3>Churros</h3>
+                    <p class="description">Bánh quẩy Tây Ban Nha chiên giòn, rắc đường và quế, ăn kèm sốt sô cô la.</p>
+                    <span class="price">75.000 vnd</span>
+                    <a href="shoppingcart1.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="antojitos">
+                    <img src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_1540,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_1.0,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Foldelpaso%2Foldelpaso-us%2Frecipes%2Fbycjfhr2dkgwaljjfps5za_gmi_hi_res_jpeg.jpeg%3F%201540w" alt="Quesadilla">
+                    <h3>Quesadilla</h3>
+                    <p class="description">Bánh tortilla nướng với phô mai và lựa chọn nhân (thịt gà, thịt bò, hoặc rau củ).</p>
+                    <span class="price">110.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="platos-fuertes">
+                    <img src="https://villacocina.com/wp-content/uploads/2024/03/Enchiladas-plate-up-2-scaled.jpg" alt="Enchiladas Rojas">
+                    <h3>Enchiladas Rojas</h3>
+                    <p class="description">Bánh ngô cuộn nhân thịt gà, phủ sốt đỏ và phô mai.</p>
+                    <span class="price">135.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-4s" data-category="postres">
+                    <img src="https://www.thespruceeats.com/thmb/h9hTzwViqJIVYDuWQzc8xi7cB48=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caramel-flan-individual-servings-2343004-hero-01-44e1e9d1ab954ef990505d69e19e856c.jpg" alt="Flan">
+                    <h3>Flan</h3>
+                    <p class="description">Bánh trứng caramel truyền thống của Mexico.</p>
+                    <span class="price">80.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="bebidas">
+                    <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/04/Horchata-9.jpg" alt="Horchata">
+                    <h3>Horchata</h3>
+                    <p class="description">Nước gạo ngọt ngào, thơm mát hương quế.</p>
+                    <span class="price">40.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="platos-fuertes">
+                    <img src="https://cdn.britannica.com/13/234013-050-73781543/rice-and-chorizo-burrito.jpg" alt="Burrito">
+                    <h3>Burrito de Carne Asada</h3>
+                    <p class="description">Bánh tortilla lớn cuộn thịt bò nướng, cơm, đậu, pico de gallo và kem chua.</p>
+                    <span class="price">150.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-4s" data-category="antojitos">
+                    <img src="https://thenoshery.com/wp-content/uploads/2017/06/Elote-Corn-3-735x1029.jpg" alt="Elote">
+                    <h3>Elote</h3>
+                    <p class="description">Bắp ngô nướng phô mai, sốt mayonnaise, ớt bột và chanh.</p>
+                    <span class="price">65.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="bebidas">
+                    <img src="https://juanitosmexicanrestaurant.com/wp-content/uploads/2022/04/JARRITOS-SODA.jpg" alt="Jarritos Mandarina">
+                    <h3>Jarritos Mandarina</h3>
+                    <p class="description">Nước ngọt có ga hương quýt đặc trưng của Mexico.</p>
+                    <span class="price">35.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="platos-fuertes">
+                    <img src="https://www.maricruzavalos.com/wp-content/uploads/2023/07/fajitas-de-pollo-recipe-500x500.jpg" alt="Fajitas de Pollo">
+                    <h3>Fajitas de Pollo</h3>
+                    <p class="description">Thịt gà xào với ớt chuông và hành tây, ăn kèm bánh tortilla.</p>
+                    <span class="price">160.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-6s" data-category="antojitos">
+                    <img src="https://media.istockphoto.com/id/509235907/vi/anh/khoai-t%C3%A2y-chi%C3%AAn-nacho-mexico-v%C3%A0-salsa-nh%C3%BAng-trong-b%C3%A1t.jpg?s=612x612&w=0&k=20&c=1e6kvlwRqFxoANp9O3Th0C6bCmR_cqtvwd2t6GXShBA=" alt="Salsa and Chips">
+                    <h3>Salsa và Chips</h3>
+                    <p class="description">Salsa tươi ngon làm từ cà chua, hành tây, ớt và rau thơm, ăn kèm tortilla chips giòn.</p>
+                    <span class="price">70.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="platos-fuertes">
+                    <img src="https://serious-foodie.com/wp-content/uploads/2022/04/Carnitas-web.jpg" alt="Carnitas">
+                    <h3>Carnitas (Thịt Heo Hầm)</h3>
+                    <p class="description">Thịt heo vai hầm chậm với gia vị truyền thống cho đến khi mềm và giòn.</p>
+                    <span class="price">165.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="bebidas">
+                    <img src="https://brokebankvegan.com/wp-content/uploads/2021/02/Agua-de-Jamaica-Recipe.jpg" alt="Agua de Jamaica">
+                    <h3>Agua de Jamaica</h3>
+                    <p class="description">Nước giải khát làm từ hoa dâm bụt, có vị chua ngọt tự nhiên.</p>
+                    <span class="price">35.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-4s" data-category="antojitos">
+                    <img src="https://thekitchenprepblog.com/wp-content/uploads/2012/06/Elote-en-vaso-square.jpg" alt="Elote en Vaso">
+                    <h3>Elote en Vaso (Bắp Ly)</h3>
+                    <p class="description">Bắp ngọt tách hạt trộn với mayonnaise, phô mai cotija, ớt bột và nước cốt chanh.</p>
+                    <span class="price">85.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="platos-fuertes">
+                    <img src="https://guerrerotortillas.com/wp-content/uploads/2021/04/beef-tostadas.jpg" alt="Tostadas">
+                    <h3>Tostadas</h3>
+                    <p class="description">Bánh tortilla chiên giòn phủ đậu nghiền, thịt (gà, bò, hoặc heo), rau diếp, cà chua, hành tây và kem chua.</p>
+                    <span class="price">145.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-2s" data-category="postres">
+                    <img src="https://www.rainbownourishments.com/wp-content/uploads/2022/04/vegan-tres-leches-cake-1.jpg" alt="Tres Leches Cake">
+                    <h3>Pastel de Tres Leches</h3>
+                    <p class="description">Bánh bông lan mềm mịn ngâm trong ba loại sữa.</p>
+                    <span class="price">90.000 vnd</span>
+                    <a href="file:///D:/home.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp animate__delay-0-6s" data-category="bebidas">
+                    <img src="https://amcollege.edu.vn/wp-content/uploads/2023/06/cocktail-margarita-scaled.jpg" alt="Margarita">
+                    <h3>Margarita</h3>
+                    <p class="description">Cocktail cổ điển của Mexico với tequila, nước cốt chanh và triple sec (có hoặc không có muối).</p>
+                    <span class="price">110.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            
+            <div class="menu-item animate__animated animate__slideInUp" data-category="platos-fuertes">
+                    <img src="https://carlsbadcravings.com/wp-content/uploads/2022/12/Tamales-1a.jpg" alt="Tamales">
+                    <h3>Tamales</h3>
+                    <p class="description">Bột ngô hấp trong lá chuối hoặc lá ngô, nhân thịt, phô mai hoặc rau củ.</p>
+                    <span class="price">100.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            <div class="menu-item animate__animated animate__slideInUp" data-category="antojitos">
+                    <img src="https://www.allrecipes.com/thmb/S-jZPsGNdswnHTF3DYV13c5l4oU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6626632-sopa-de-tortilla-real-mexican-tortilla-soup-Elizabeth-Vergara-4x3-1-a667444e50e346598c0b00bf4ba96054.jpg" alt="Sopa de Tortilla">
+                    <h3>Sopa de Tortilla</h3>
+                    <p class="description">Súp gà với nước dùng cà chua đậm đà, tortilla chiên giòn, phô mai và bơ.</p>
+                    <span class="price">85.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+            <div class="menu-item animate__animated animate__slideInUp" data-category="postres">
+                    <img src="https://www.thespruceeats.com/thmb/M0jmA0EVa9-ejsbCMJG3nH5YLTg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/arroz-con-leche-mexican-rice-pudding-2343000-hero-07-07777a21c5e245cbb9e572158b2fcddc.jpg" alt="Arroz con Leche">
+                    <h3>Arroz con Leche</h3>
+                    <p class="description">Món tráng miệng truyền thống làm từ gạo, sữa, đường, quế và đôi khi có thêm nho khô.</p>
+                    <span class="price">70.000 vnd</span>
+                    <a href="dt.html">
+                        <button class="add-to-cart">+</button>
+                    </a>
+                </div>
+        </section>
+    </main>
+
+    <!-- Phần Footer: hiển thị thông tin liên hệ, giờ mở cửa, địa chỉ và liên kết mạng xã hội -->
+    <footer id="footer">
+        <!-- Logo và tên nhà hàng trong Footer -->
+        <div class="footer-logo">
+            <h2>TICA'S TACO</h2>
+            <p>NHÀ HÀNG MÊ-HI-CÔ</p>
+        </div>
+        
+        <!-- Thông tin chi tiết: giờ mở cửa, địa điểm, liên hệ và mạng xã hội -->
+        <div class="footer-info">
+            <!-- Giờ mở cửa -->
+            <div class="hours">
+                <h3>GIỜ MỞ CỬA</h3>
+                <p>Thứ 2 - Thứ 6: 11 a.m - 10 p.m</p>
+                <p>Thứ 7 - Chủ nhật: 10 a.m - 11 p.m</p>
+            </div>
+            <!-- Địa chỉ nhà hàng -->
+            <div class="location">
+                <h3>ĐỊA ĐIỂM</h3>
+                <p>144 Xuân Thủy</p>
+                <p>Hà Nội, Hà Nội</p>
+            </div>
+            <!-- Thông tin liên hệ -->
+            <div class="contact">
+                <h3>LIÊN HỆ</h3>
+                <p>ticastaco@gmail.com</p>
+                <p>098 101 0101</p>
+            </div>
+            <!-- Mạng xã hội -->
+            <div class="social">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <!-- Liên kết Facebook với background-image được set inline -->
+                    <a href="https://www.facebook.com/opeth.cooper" aria-label="Facebook" class="social-icon" id="facebook-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png'); background-size: cover;"></a>
+                    <!-- Liên kết Instagram -->
+                    <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon" id="instagram-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'); background-size: cover;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://www.drv.tw/inc/wd.js?s=truongthienan-web-development-lab3-pro-html"></script></body>
+</html>

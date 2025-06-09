@@ -1,0 +1,847 @@
+body {
+     font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-mexico.jpg?v=1662973104483');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global styles */
+:root {
+    /* Color palette */
+    --primary-color: #264653;
+    --secondary-color: #e63946;
+    --background-color: #fff4de;
+    --text-color: #264653;
+    --accent-color: #a8dadc;
+    --dark-accent: #1d3557;
+    --light-text: #f1faee;
+    --link-color: #457b9d;
+    
+    /* Common measurements */
+    --border-radius: 8px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html{
+    
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+	
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+/* Logo formatting */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.fredericka-font {
+    font-size: 25px; /* T�ng k穩ch th⑹廙𢲷 ch廙� */
+    font-weight: bold; /* L�𦅙 ch廙� �𤒹滬m h①n */
+    color: #553d07; /* M�抦 ch廙� (tu廙� ch廙纤h theo th⑹①ng hi廙杮) */
+    margin-bottom: 10px; /* Kho廕τg c獺ch v廙𢹂 logo */
+	 font-family: 'EB Garamond', serif;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.text-container {
+    text-align: left;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #e63946; /* Red highlight for title */
+}
+p {
+    font-size: 10px;
+    margin: 0;
+    color: #264653;
+}
+.main-header {
+    background-color: #fff4de;
+  }
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    background-color: #fff4de;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #264653;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #fff4de;
+    color: var(--secondary-color);
+}
+
+.mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--link-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+main {
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 20px;
+}
+
+section {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #e44d26;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #CC6600;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+
+.hero {
+    display: block;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.hero-content {
+    padding-right: 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+	background-color: transparent;
+	border-radius: 8px;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+	padding: 12px 20px;
+    margin: 5px;
+	cursor: pointer;
+    font-size: 1em; /* T�ng k穩ch th⑹廙𢲷 font */
+}
+.category-button.active, .category-button:hover {
+    background-color: #e67e22;
+    color: white;
+}
+.menu-items-grid {
+    display: block;
+}
+
+.menu-item {
+    background-color: #FAEBD7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 40px;
+    display: flex; /* Th礙m d簷ng n�懢 */
+    flex-direction: column; /* M廕搾 �𤒹�𡃉h s廕皰 x廕穆 theo c廙脌 */
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 30px; 
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Th礙m b籀ng �𤒹�� khi hover */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* �靟漆m b廕υ hi廙杮 廙姊g b籀ng �𤒹�� c觼ng c籀 transition */
+}
+
+.menu-item img {
+    height: auto;
+    max-width: 100%; /* T廙魀 ⑹u h籀a h穫nh 廕τh */
+ 
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #003366;
+    margin-bottom: 5px;
+	font-size: 1.2rem;
+}
+
+.menu-item .description {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    color: #000000 ;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.menu-item .add-to-cart {
+    background-color: #CC0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.menu-item .add-to-cart:hover {
+    background-color: #880000;
+}
+
+
+.about-content, .contact-form {
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10;
+}
+/* Footer */
+footer {
+    background-color: var(--dark-accent);
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo h2 {
+    font-size: 1.5rem;
+    color: var(--light-text);
+    margin-bottom: 0.2rem;
+}
+
+.footer-logo p {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-info > div {
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.footer-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.footer-info p {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: var(--light-text);
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+body {
+    font-family: 'EB Garamond', serif; /* S廙� d廙叩g font ch廙� EB Garamond cho to�慙 trang */
+    margin: 0; /* Lo廕【 b廙� margin m廕搾 �𤒹�𡃉h */
+    padding: 0; /* Lo廕【 b廙� padding m廕搾 �𤒹�𡃉h */
+    background-image: url('https://bizweb.dktcdn.net/100/004/714/files/banh-taco-mexico.jpg?v=1662973104483'); /* �靟熒t h穫nh n廙�n t廙� URL ch廙� �𤒹�𡃉h */
+    background-size: cover; /* H穫nh n廙�n s廕� ph廙� to�慙 b廙� trang */
+    background-position: center; /* Canh gi廙畝 h穫nh n廙�n */
+    background-repeat: no-repeat; /* Kh繫ng l廕搆 l廕【 h穫nh n廙�n */
+    background-attachment: fixed; /* H穫nh n廙�n c廙� �𤒹�𡃉h khi cu廙㷌 trang */
+    background-color: #f8f8f8; /* M�抦 n廙�n d廙� ph簷ng n廕簑 h穫nh kh繫ng t廕ξ */
+    color: #333; /* M�抦 ch廙� x獺m �𤒹滬m */
+    line-height: 1.6; /* Kho廕τg c獺ch gi廙畝 c獺c d簷ng */
+}
+
+:root { /* �靟�𡃉h ngh藺a c獺c bi廕積 CSS to�慙 c廙卉 */
+    --primary-color: #264653; /* M�抦 ch廙� �𤒹滿o */
+    --secondary-color: #e63946; /* M�抦 ph廙� (�𤒹��) */
+    --background-color: #fff4de; /* M�抦 n廙�n ch穩nh */
+    --text-color: #264653; /* M�抦 ch廙� ch穩nh */
+    --accent-color: #a8dadc; /* M�抦 nh廕叩 */
+    --dark-accent: #1d3557; /* M�抦 nh廕叩 �𤒹滬m */
+    --light-text: #f1faee; /* M�抦 ch廙� s獺ng */
+    --link-color: #457b9d; /* M�抦 li礙n k廕篙 */
+    --border-radius: 8px; /* B獺n k穩nh bo tr簷n chung */
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hi廙杮 廙姊g b籀ng chung */
+}
+
+* { 
+    margin: 0; /* Reset margin cho m廙幂 ph廕吵 t廙� */
+    padding: 0; /* Reset padding cho m廙幂 ph廕吵 t廙� */
+    box-sizing: border-box; /* �靟熒t box-sizing �𤒹� t穩nh padding/border v�䰄 k穩ch th⑹廙𢲷 ph廕吵 t廙� */
+}
+
+html {
+    background-color: var(--background-color); /* S廙� d廙叩g bi廕積 m�抦 n廙�n �𤒹�𡃉h ngh藺a 廙� :root */
+    color: var(--text-color); /* S廙� d廙叩g bi廕積 m�抦 ch廙� �𤒹�𡃉h ngh藺a 廙� :root */
+    line-height: 1.6; /* Kho廕τg c獺ch d簷ng chung */
+}
+
+a {
+    text-decoration: none; /* Lo廕【 b廙� g廕︷h ch璽n cho li礙n k廕篙 */
+    color: var(--text-color); /* M�抦 ch廙� cho li礙n k廕篙 theo bi廕積 */
+    transition: color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 khi hover */
+}
+
+a:hover {
+    color: var(--secondary-color); /* M�抦 ch廙� chuy廙�n sang m�抦 ph廙� khi hover */
+}
+
+.container {
+    width: 100%; /* Chi廕禦 to�慙 b廙� chi廙�u r廙㷌g */
+    max-width: 1200px; /* Chi廙�u r廙㷌g t廙魀 �鬭 1200px */
+    margin: 0 auto; /* Canh gi廙畝 container */
+    padding: 0 15px; /* Padding b礙n tr獺i v�� ph廕ξ */
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--background-color); /* M�抦 n廙�n header theo bi廕積 */
+    position: sticky; /* Gi廙� header c廙� �𤒹�𡃉h khi cu廙㷌 trang */
+    top: 0; /* N廕彩 廙� �𤒹�纤h trang */
+    z-index: 1000; /* ⑸u ti礙n hi廙�n th廙� tr礙n c獺c ph廕吵 t廙� kh獺c */
+    box-shadow: var(--box-shadow); /* S廙� d廙叩g hi廙杮 廙姊g b籀ng �𤒹�𡃉h ngh藺a 廙� :root */
+}
+
+.logo-container {
+    display: flex; /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 logo v�� ti礙u �𤒹� */
+    align-items: center; /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    justify-content: center; /* Canh gi廙畝 theo chi廙�u ngang */
+    gap: 15px; /* Kho廕τg c獺ch gi廙畝 c獺c ph廕吵 t廙� */
+    padding: 10px; /* Padding cho container */
+}
+
+.fredericka-font {
+    font-size: 25px; /* K穩ch th⑹廙𢲷 ch廙� t�ng l礙n */
+    font-weight: bold; /* In �𤒹滬m ch廙� */
+    color: #553d07; /* M�抦 ch廙� t羅y ch廙纤h (n璽u) */
+    margin-bottom: 10px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 t礙n th⑹①ng hi廙杮 */
+    font-family: 'EB Garamond', serif; /* D羅ng font EB Garamond */
+}
+
+.logo {
+    width: 50px; /* Chi廙�u r廙㷌g logo */
+    height: auto; /* Chi廙�u cao t廙� �𤒹�㷌g gi廙� t廙� l廙� */
+}
+
+.text-container {
+    text-align: left; /* Canh tr獺i cho n廙耥 dung v�n b廕τ */
+}
+
+h1 {
+    font-size: 20px; /* K穩ch th⑹廙𢲷 ti礙u �𤒹� h1 */
+    margin: 0; /* Lo廕【 b廙� margin m廕搾 �𤒹�𡃉h */
+    color: #e63946; /* M�抦 ti礙u �𤒹� (�𤒹��) */
+}
+
+p {
+    font-size: 10px; /* K穩ch th⑹廙𢲷 ch廙� nh廙� cho �鰂廕》 v�n */
+    margin: 0; /* Lo廕【 b廙� margin */
+    color: #264653; /* M�抦 ch廙� xanh �𤒹滬m */
+}
+
+.main-header {
+    background-color: #fff4de; /* M�抦 n廙�n cho header ch穩nh */
+}
+
+nav ul {
+    display: none; /* 廕盯 menu m廕搾 �𤒹�𡃉h (ch廙� hi廙�n th廙� khi c籀 class show) */
+    flex-direction: column; /* S廕皰 x廕穆 c獺c m廙卉 menu theo c廙脌 */
+    list-style: none; /* Lo廕【 b廙� d廕只 �𤒹漣u d簷ng */
+    padding: 0; /* Lo廕【 b廙� padding */
+    background-color: #fff4de; /* M�抦 n廙�n c廙吧 menu */
+    position: absolute; /* Menu �韲唸誨c �𤒹�𡃉h v廙� tuy廙峼 �𤒹�魀 */
+    top: 100%; /* �靟熒t menu ngay d⑹廙𢹂 header */
+    left: 0; /* Canh tr獺i */
+    right: 0; /* Canh ph廕ξ */
+    z-index: 100; /* ⑸u ti礙n hi廙�n th廙� tr礙n m廙脌 s廙� ph廕吵 t廙� kh獺c */
+    box-shadow: var(--box-shadow); /* Hi廙杮 廙姊g b籀ng cho menu */
+}
+
+nav ul.show {
+    display: flex; /* Hi廙�n th廙� menu khi c籀 class show */
+}
+
+nav ul li {
+    margin: 0; /* Lo廕【 b廙� margin cho c獺c m廙卉 menu */
+    border-bottom: 1px solid #e0e0e0; /* �𨫠唸�𩵚g vi廙�n d⑹廙𢹂 cho t廙南g m廙卉 menu */
+}
+
+nav ul li:last-child {
+    border-bottom: none; /* Kh繫ng c籀 �韲唸�𩵚g vi廙�n d⑹廙𢹂 cho m廙卉 cu廙魀 c羅ng */
+}
+
+nav ul li a {
+    font-size: 0.9rem; /* K穩ch th⑹廙𢲷 ch廙� cho li礙n k廕篙 trong menu */
+    font-weight: 600; /* In �𤒹滬m ch廙� */
+    color: #264653; /* M�抦 ch廙� xanh �𤒹滬m */
+    transition: all 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n �𤒹�飃 m⑹廙ㄅ khi hover */
+    padding: 1rem; /* Padding cho li礙n k廕篙 */
+    display: block; /* Hi廙�n th廙� li礙n k廕篙 d廕》g kh廙魀 */
+    text-align: center; /* Canh gi廙畝 v�n b廕τ */
+    text-decoration: none; /* Lo廕【 b廙� g廕︷h ch璽n */
+}
+
+nav ul li a:hover {
+    background-color: #fff4de; /* M�抦 n廙�n khi hover */
+    color: var(--secondary-color); /* M�抦 ch廙� chuy廙�n sang m�抦 ph廙� khi hover */
+}
+
+.mobile-menu-btn {
+    display: block; /* Hi廙�n th廙� n繳t menu cho mobile */
+    cursor: pointer; /* �靟�飃 con tr廙� khi hover */
+    padding: 1rem; /* Padding cho n繳t menu */
+}
+
+.mobile-menu-btn span {
+    display: block; /* Hi廙�n th廙� m廙𡟙 thanh c廙吧 n繳t hamburger */
+    width: 25px; /* Chi廙�u r廙㷌g c廙吧 thanh */
+    height: 3px; /* Chi廙�u cao c廙吧 thanh */
+    background-color: var(--link-color); /* M�抦 c廙吧 thanh */
+    margin: 5px 0; /* Kho廕τg c獺ch gi廙畝 c獺c thanh */
+    transition: all 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g khi hover */
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px); /* Bi廕積 �𤒹�飃 thanh �𤒹漣u ti礙n khi active */
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0; /* 廕盯 thanh th廙� hai khi active */
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px); /* Bi廕積 �𤒹�飃 thanh th廙� ba khi active */
+}
+
+main {
+    padding-top: 50px; /* Th礙m kho廕τg c獺ch tr礙n �𤒹� kh繫ng b廙� header che */
+    background-color: rgba(255, 255, 255, 0.8); /* N廙�n tr廕疸g v廙𢹂 �𤒹�� trong su廙𩾷 cho ph廕吵 main */
+    padding-bottom: 20px; /* Padding d⑹廙𢹂 cho ph廕吵 main */
+}
+
+section {
+    padding: 30px 10px; /* Padding cho t廙南g section */
+    text-align: center; /* Canh gi廙畝 v�n b廕τ trong section */
+}
+
+h2 {
+    font-size: 2rem; /* K穩ch th⑹廙𢲷 ti礙u �𤒹� h2 */
+    color: #e44d26; /* M�抦 ti礙u �𤒹� (�𤒹�� cam) */
+    margin-bottom: 20px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+}
+
+.button {
+    display: inline-block; /* Hi廙�n th廙� n繳t d⑹廙𢹂 d廕》g inline-block */
+    background-color: #CC6600; /* M�抦 n廙�n cam cho n繳t */
+    color: white; /* M�抦 ch廙� tr廕疸g */
+    padding: 9px 20px; /* Padding cho n繳t */
+    border-radius: 8px; /* Bo tr簷n c獺c g籀c c廙吧 n繳t */
+    text-decoration: none; /* Lo廕【 b廙� g廕︷h ch璽n */
+    transition: background-color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 khi hover */
+    font-weight: bold; /* Ch廙� in �𤒹滬m */
+}
+
+.hero {
+    display: block; /* Hi廙�n th廙� hero d⑹廙𢹂 d廕》g block */
+    padding: 50px 10px; /* Padding cho ph廕吵 hero */
+    text-align: center; /* Canh gi廙畝 n廙耥 dung hero */
+}
+
+.hero-content {
+    padding-right: 0; /* Kh繫ng th礙m padding b礙n ph廕ξ cho n廙耥 dung hero */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* K穩ch th⑹廙𢲷 ti礙u �𤒹� trong hero */
+    margin-bottom: 15px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+}
+
+.hero-content p {
+    font-size: 1rem; /* K穩ch th⑹廙𢲷 ch廙� cho �鰂廕》 m繫 t廕� trong hero */
+    margin-bottom: 20px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 �鰂廕》 m繫 t廕� */
+}
+
+.hero-image {
+    max-width: 100%; /* Gi廙𢹂 h廕》 chi廙�u r廙㷌g c廙吧 h穫nh 廕τh hero */
+    margin-top: 20px; /* Kho廕τg c獺ch ph穩a tr礙n h穫nh 廕τh hero */
+}
+
+.menu-categories {
+    display: flex; /* S廕皰 x廕穆 c獺c n繳t danh m廙卉 theo h�慙g ngang */
+    flex-wrap: wrap; /* Cho ph矇p c獺c n繳t xu廙𤉋g d簷ng n廕簑 kh繫ng �𤒹誧 ch廙� */
+    justify-content: center; /* Canh gi廙畝 c獺c n繳t */
+    margin-bottom: 20px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 danh m廙卉 */
+}
+
+.category-button {
+	background-color: transparent; /* N廙�n trong su廙𩾷 cho n繳t danh m廙卉 */
+	border-radius: 8px; /* Bo tr簷n c獺c g籀c c廙吧 n繳t */
+    border: 2px solid #e67e22; /* Vi廙�n m�抦 cam cho n繳t */
+    color: #e67e22; /* M�抦 ch廙� cam */
+	padding: 12px 20px; /* Padding cho n繳t */
+    margin: 5px; /* Kho廕τg c獺ch gi廙畝 c獺c n繳t */
+	cursor: pointer; /* Hi廙�n th廙� con tr廙� khi hover */
+    font-size: 1em; /* K穩ch th⑹廙𢲷 font c廙吧 n繳t */
+}
+.category-button.active, .category-button:hover {
+    background-color: #e67e22; /* N廙�n cam khi n繳t �韲唸誨c active ho廕搾 hover */
+    color: white; /* Ch廙� chuy廙�n sang tr廕疸g khi active/hover */
+}
+.menu-items-grid {
+    display: block; /* Hi廙�n th廙� l⑹廙𢹂 m籀n �n theo d廕》g block */
+}
+
+.menu-item {
+    background-color: #FAEBD7; /* N廙�n m�抦 kem cho kh廙魀 m籀n �n */
+    border-radius: 20px; /* Bo tr簷n c獺c g籀c */
+    overflow: hidden; /* 廕盯 ph廕吵 n廙耥 dung tr�慙 ra ngo�犲 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hi廙杮 廙姊g b籀ng cho kh廙魀 m籀n �n */
+    text-align: left; /* Canh tr獺i n廙耥 dung trong kh廙魀 m籀n �n */
+    padding: 40px; /* Padding cho kh廙魀 m籀n �n */
+    display: flex; /* S廙� d廙叩g flexbox trong kh廙魀 m籀n �n */
+    flex-direction: column; /* S廕皰 x廕穆 n廙耥 dung theo c廙脌 */
+    transition: transform 0.2s ease-in-out; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g khi hover */
+    margin-bottom: 30px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 m廙𡟙 kh廙魀 m籀n �n */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* N璽ng kh廙魀 m籀n �n l礙n 5px khi hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* T�ng b籀ng �𤒹�� khi hover */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Hi廙杮 廙姊g chuy廙�n �𤒹�㷌g m⑹廙ㄅ */
+}
+
+.menu-item img {
+    height: auto; /* Chi廙�u cao t廙� �𤒹�㷌g �𤒹� gi廙� t廙� l廙� */
+    max-width: 100%; /* Gi廙𢹂 h廕》 chi廙�u r廙㷌g c廙吧 h穫nh 廕τh */
+}
+.menu-item img {
+    width: 100%; /* H穫nh 廕τh chi廕禦 to�慙 b廙� chi廙�u r廙㷌g kh廙魀 */
+    height: auto; /* Chi廙�u cao t廙� �𤒹�㷌g gi廙� t廙� l廙� */
+    object-fit: cover; /* C廕眩 h穫nh 廕τh �𤒹� v廙冠 khung m�� kh繫ng b廙� m矇o */
+    border-radius: 8px; /* Bo tr簷n c獺c g籀c c廙吧 h穫nh 廕τh */
+    margin-bottom: 15px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 h穫nh 廕τh */
+}
+
+.menu-item h3 {
+    margin-top: 0; /* Lo廕【 b廙� margin tr礙n ti礙u �𤒹� m籀n �n */
+    color: #003366; /* M�抦 ti礙u �𤒹� m籀n �n (xanh �𤒹滬m) */
+    margin-bottom: 5px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 ti礙u �𤒹� */
+	font-size: 1.2rem; /* K穩ch th⑹廙𢲷 ti礙u �𤒹� m籀n �n */
+}
+
+.menu-item .description {
+    color: #777; /* M�抦 ch廙� cho m繫 t廕� m籀n �n (x獺m) */
+    font-size: 0.9rem; /* K穩ch th⑹廙𢲷 ch廙� cho m繫 t廕� */
+    margin-bottom: 10px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 m繫 t廕� */
+}
+
+.menu-item .price {
+    color: #000000; /* M�抦 ch廙� cho gi獺 m籀n �n (�𦦨n) */
+    font-weight: bold; /* In �𤒹滬m gi獺 */
+    font-size: 1.1rem; /* K穩ch th⑹廙𢲷 ch廙� cho gi獺 */
+    margin-bottom: 15px; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 gi獺 */
+}
+
+.menu-item .add-to-cart {
+    background-color: #CC0000; /* M�抦 n廙�n �𤒹�� cho n繳t th礙m v�䰄 gi廙� */
+    color: white; /* M�抦 ch廙� tr廕疸g cho n繳t */
+    border: none; /* Lo廕【 b廙� �韲唸�𩵚g vi廙�n n繳t */
+    padding: 10px 20px; /* Padding cho n繳t */
+    border-radius: 8px; /* Bo tr簷n c獺c g籀c c廙吧 n繳t */
+    cursor: pointer; /* Hi廙�n th廙� con tr廙� khi hover */
+    font-size: 1rem; /* K穩ch th⑹廙𢲷 ch廙� n繳t */
+    transition: background-color 0.3s ease; /* Hi廙杮 廙姊g chuy廙�n m�抦 n廙�n khi hover */
+    align-self: flex-start; /* C�n n繳t sang b礙n tr獺i trong kh廙魀 m籀n �n */
+}
+
+.menu-item .add-to-cart:hover {
+    background-color: #880000; /* Thay �𤒹�飃 m�抦 n廙�n n繳t khi hover */
+}
+
+.about-content, .contact-form {
+    max-width: 100%; /* Chi廙�u r廙㷌g t廙魀 �鬭 100% cho n廙耥 dung v廙� ch繳ng t繫i & form li礙n h廙� */
+    padding: 0 10px; /* Padding b礙n tr獺i v�� ph廕ξ */
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10; /* Padding cho input v�� textarea */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-accent); /* M�抦 n廙�n footer theo bi廕積 dark-accent */
+    color: #fff; /* M�抦 ch廙� tr廕疸g cho footer */
+    padding: 2rem 1rem; /* Padding cho footer */
+}
+
+.footer-logo {
+    text-align: center; /* Canh gi廙畝 logo trong footer */
+    margin-bottom: 1.5rem; /* Kho廕τg c獺ch b礙n d⑹廙𢹂 logo footer */
+}
+
+.footer-logo h2 {
+    font-size: 1.5rem; /* K穩ch th⑹廙𢲷 ti礙u �𤒹� trong footer */
+    color: var(--light-text); /* M�抦 ch廙� s獺ng cho ti礙u �𤒹� footer */
+    margin-bottom: 0.2rem; /* Kho廕τg c獺ch nh廙� b礙n d⑹廙𢹂 ti礙u �𤒹� */
+}
+
+.footer-logo p {
+    font-size: 0.8rem; /* K穩ch th⑹廙𢲷 ch廙� cho m繫 t廕� footer */
+    color: var(--accent-color); /* M�抦 ch廙� cho m繫 t廕� footer theo bi廕積 accent-color */
+}
+
+.footer-info {
+    display: flex; /* S廙� d廙叩g flexbox cho ph廕吵 th繫ng tin footer */
+    flex-direction: column; /* S廕皰 x廕穆 th繫ng tin theo c廙脌 */
+    gap: 1.5rem; /* Kho廕τg c獺ch gi廙畝 c獺c kh廙魀 th繫ng tin */
+}
+
+.footer-info > div {
+    margin-bottom: 1rem; /* Kho廕τg c獺ch d⑹廙𢹂 cho t廙南g kh廙魀 th繫ng tin */
+}
+
+.footer-info h3 {
+    font-size: 1rem; /* K穩ch th⑹廙𢲷 ch廙� cho ti礙u �𤒹� c廙吧 th繫ng tin footer */
+    color: var(--accent-color); /* M�抦 ch廙� theo bi廕積 accent-color */
+    margin-bottom: 0.8rem; /* Kho廕τg c獺ch d⑹廙𢹂 ti礙u �𤒹� */
+    position: relative; /* Cho ph矇p �𤒹�𡃉h v廙� ph廕吵 t廙� con (underline) */
+}
+
+.footer-info h3::after {
+    content: ""; /* N廙耥 dung r廙瑈g cho underline */
+    position: absolute; /* �靟�𡃉h v廙� tuy廙峼 �𤒹�魀 */
+    bottom: -5px; /* C獺ch d⑹廙𢹂 ti礙u �𤒹� 5px */
+    left: 0; /* B廕眩 �𤒹漣u t廙� b礙n tr獺i */
+    width: 30px; /* Chi廙�u r廙㷌g c廙吧 underline */
+    height: 2px; /* �靟�� d�懢 c廙吧 underline */
+    background-color: var(--secondary-color); /* M�抦 underline theo bi廕積 secondary-color */
+}
+
+.footer-info p {
+    font-size: 0.8rem; /* K穩ch th⑹廙𢲷 ch廙� cho th繫ng tin footer */
+    margin-bottom: 0.4rem; /* Kho廕τg c獺ch d⑹廙𢹂 m廙𡟙 d簷ng th繫ng tin */
+    color: var(--light-text); /* M�抦 ch廙� theo bi廕積 light-text */
+}
+
+.social-icons {
+    display: flex; /* S廙� d廙叩g flexbox cho c獺c bi廙�u t⑹廙τg m廕》g x瓊 h廙耥 */
+    margin-top: 0.8rem; /* Kho廕τg c獺ch tr礙n cho bi廙�u t⑹廙τg */
+}
+
+.social-icon {
+    width: 35px; /* K穩ch th⑹廙𢲷 c廙吧 bi廙�u t⑹廙τg */
+    height: 35px;
+    border-radius: 50%; /* Bo tr簷n bi廙�u t⑹廙τg */
+    display: flex; /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 icon */
+    align-items: center; /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    justify-content: center; /* C�n gi廙畝 theo chi廙�u ngang */
+    margin-right: 0.8rem;
+}
+
+.social-icon {
+    width: 35px; /* �靟熒t chi廙�u r廙㷌g c廙吧 bi廙�u t⑹廙τg l�� 35px */
+    height: 35px; /* �靟熒t chi廙�u cao c廙吧 bi廙�u t⑹廙τg l�� 35px */
+    border-radius: 50%; /* L�𦅙 cho bi廙�u t⑹廙τg c籀 h穫nh tr簷n */
+    display: flex; /* S廙� d廙叩g flexbox �𤒹� c�n gi廙畝 n廙耥 dung b礙n trong */
+    align-items: center; /* C�n gi廙畝 theo chi廙�u d廙㷼 */
+    justify-content: center; /* C�n gi廙畝 theo chi廙�u ngang */
+    margin-right: 0.8rem; /* T廕︽ kho廕τg c獺ch b礙n ph廕ξ gi廙畝 c獺c bi廙�u t⑹廙τg */
+    background-color: var(--link-color); /* �靟熒t m�抦 n廙�n s廙� d廙叩g bi廕積 CSS --link-color */
+    transition: transform 0.3s ease; /* Th礙m hi廙杮 廙姊g chuy廙�n �𤒹�飃 m⑹廙ㄅ m�� khi thay �𤒹�飃 transform */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Khi di chu廙脌 v�䰄, bi廙�u t⑹廙τg s廕� di chuy廙�n l礙n tr礙n 3px */
+}
+
+/* Hi廙�n th廙� menu tr礙n thi廕篙 b廙� di �𤒹�㷌g */
+nav ul.show {
+    display: flex !important; /* Hi廙�n th廙� danh s獺ch menu d⑹廙𢹂 d廕》g flexbox */
+    flex-direction: column; /* S廕皰 x廕穆 c獺c m廙卉 theo c廙脌 */
+    position: absolute; /* �靟�𡃉h v廙� tuy廙峼 �𤒹�魀 so v廙𢹂 ph廕吵 t廙� cha */
+    top: 100%; /* �靟熒t menu ngay d⑹廙𢹂 ph廕吵 t廙� cha */
+    left: 0; /* C�n tr獺i v廙𢹂 ph廕吵 t廙� cha */
+    right: 0; /* C�n ph廕ξ v廙𢹂 ph廕吵 t廙� cha */
+    background: #fff4de; /* �靟熒t m�抦 n廙�n cho menu */
+    z-index: 1000; /* �靟漆m b廕υ menu hi廙�n th廙� tr礙n c獺c ph廕吵 t廙� kh獺c */
+    animation: slideDown 0.3s ease-out; /* �p d廙叩g hi廙杮 廙姊g tr⑹廙ㄅ xu廙𤉋g khi hi廙�n th廙� menu */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px); /* B廕眩 �𤒹漣u v廙𢹂 v廙� tr穩 d廙醶h chuy廙�n l礙n tr礙n 20px */
+        opacity: 0; /* B廕眩 �𤒹漣u v廙𢹂 �𤒹�� m廙� l�� 0 */
+    }
+    to {
+        transform: translateY(0); /* K廕篙 th繳c t廕【 v廙� tr穩 ban �𤒹漣u */
+        opacity: 1; /* �靟�� m廙� ho�慙 to�慙 */
+    }
+}
